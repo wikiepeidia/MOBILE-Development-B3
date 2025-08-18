@@ -1,7 +1,7 @@
-## USTH ICT Android mobile app Development 2025
+# USTH ICT Android mobile app Development 2025
 ========================================
 
-# Student Information :
+## Student Information :
 
 * **23bi14279**
 * **Pham The Minh**
