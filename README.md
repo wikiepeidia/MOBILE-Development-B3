@@ -2,9 +2,9 @@
 
 ## Student Information :
 
-* **23bi14279**
-* **Pham The Minh**
-* **B3 ICT class 1**
+* Student ID: **23bi14279**
+* Student Name **Pham The Minh**
+* Class: **B3 ICT class 1**
 
 ## Assignment
 

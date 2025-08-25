@@ -1,7 +1,3 @@
 <component name="CopyrightManager">
-  <settings default="wikiepeidia">
-    <module2copyright>
-      <element module="All" copyright="wikiepeidia" />
-    </module2copyright>
-  </settings>
+  <settings default="wikiepeidia" />
 </component>
