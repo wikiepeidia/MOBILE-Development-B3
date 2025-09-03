@@ -23,7 +23,8 @@ jobs:
       - name: Set up Gradle
         uses: gradle/actions/setup-gradle@v4
 
-      - name: Install Android SDK components
+      - name: First attempt - Install Android SDK components (will fail but create license structure)
+        continue-on-error: true
         uses: android-actions/setup-android@v3
         with:
           packages: |
@@ -32,24 +33,37 @@ jobs:
             build-tools;34.0.0
             cmdline-tools;latest
 
-      - name: Install expect for license automation
-        run: sudo apt-get update && sudo apt-get install -y expect
-
-      - name: Accept Android SDK licenses using expect
+      - name: Accept all licenses using the Flutter method
         run: |
-          expect -c "
-            set timeout 300
-            spawn $ANDROID_HOME/cmdline-tools/latest/bin/sdkmanager --licenses
-            expect {
-              \"Review licenses that have not been accepted (y/N)?\" { send \"y\r\"; exp_continue }
-              \"Accept? (y/N):\" { send \"y\r\"; exp_continue }
-              \"Do you accept the license\" { send \"y\r\"; exp_continue }
-              \"(y/N):\" { send \"y\r\"; exp_continue }
-              \"(y/N)\" { send \"y\r\"; exp_continue }
-              timeout { exit 1 }
-              eof { exit 0 }
-            }
-          "
+          # Method 1: Use the proven Flutter doctor approach
+          if command -v flutter >/dev/null 2>&1; then
+            flutter doctor --android-licenses --verbose || true
+          fi
+          
+          # Method 2: Use the yes + sdkmanager approach from Stack Overflow
+          export PATH="$ANDROID_HOME/cmdline-tools/latest/bin:$PATH"
+          yes | sdkmanager --licenses || true
+          
+          # Method 3: Alternative paths for sdkmanager
+          if [ -f "$ANDROID_HOME/cmdline-tools/latest/bin/sdkmanager" ]; then
+            yes | $ANDROID_HOME/cmdline-tools/latest/bin/sdkmanager --licenses || true
+          fi
+          
+          if [ -f "$ANDROID_HOME/tools/bin/sdkmanager" ]; then
+            yes | $ANDROID_HOME/tools/bin/sdkmanager --licenses || true
+          fi
+          
+          # Method 4: Update SDK after accepting licenses
+          sdkmanager --update || true
+
+      - name: Second attempt - Install Android SDK components (should work now)
+        uses: android-actions/setup-android@v3
+        with:
+          packages: |
+            platform-tools
+            platforms;android-34
+            build-tools;34.0.0
+            cmdline-tools;latest
 
       - name: Verify Android SDK setup
         run: |
