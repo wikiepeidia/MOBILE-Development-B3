@@ -23,7 +23,29 @@ jobs:
       - name: Set up Gradle
         uses: gradle/actions/setup-gradle@v4
 
-      - name: Install Android SDK components
+      - name: Setup Android SDK with manual installation
+        run: |
+          # Create SDK directory and licenses directory first
+          sudo mkdir -p /usr/local/lib/android/sdk/licenses
+          sudo chown -R $USER:$USER /usr/local/lib/android/sdk
+          
+          # Pre-create all known license files with all known hashes
+          echo "601085b94cd77f0b54ff86406957099ebe79c4d6" > /usr/local/lib/android/sdk/licenses/android-googletv-license
+          echo "24333f8a63b6825ea9c5514f83c2829b004d1fee" >> /usr/local/lib/android/sdk/licenses/android-googletv-license
+          echo "d56f5187479451eabf01fb78af6dfcb131a6481e" > /usr/local/lib/android/sdk/licenses/android-sdk-license  
+          echo "24333f8a63b6825ea9c5514f83c2829b004d1fee" >> /usr/local/lib/android/sdk/licenses/android-sdk-license
+          echo "84831b9409646a918e30573bab4c9c91346d8abd" > /usr/local/lib/android/sdk/licenses/android-sdk-preview-license
+          echo "d975f751698a77b662f1254ddbeed3901e976f5a" > /usr/local/lib/android/sdk/licenses/intel-android-extra-license
+          echo "8933bad161af4178b1185d1a37fbf41ea5269c55" > /usr/local/lib/android/sdk/licenses/mips-android-sysimage-license
+          echo "79120722343a6f314e0719f863036c702b0e6b2a" > /usr/local/lib/android/sdk/licenses/android-sdk-arm-dbt-license
+          
+          # Set environment variables
+          echo "ANDROID_HOME=/usr/local/lib/android/sdk" >> $GITHUB_ENV
+          echo "ANDROID_SDK_ROOT=/usr/local/lib/android/sdk" >> $GITHUB_ENV
+          echo "/usr/local/lib/android/sdk/cmdline-tools/latest/bin" >> $GITHUB_PATH
+          echo "/usr/local/lib/android/sdk/platform-tools" >> $GITHUB_PATH
+
+      - name: Install Android SDK components (with pre-accepted licenses)
         uses: android-actions/setup-android@v3
         with:
           packages: |
@@ -31,28 +53,6 @@ jobs:
             platforms;android-34
             build-tools;34.0.0
             cmdline-tools;latest
-
-      - name: Create Android SDK licenses directory
-        run: |
-          mkdir -p $ANDROID_HOME/licenses
-
-      - name: Accept Android SDK licenses (nuclear option)
-        run: |
-          # Install expect for interactive automation
-          sudo apt-get update && sudo apt-get install -y expect
-
-          # Use expect to handle the interactive prompts
-          expect -c "
-            set timeout 300
-            spawn $ANDROID_HOME/cmdline-tools/latest/bin/sdkmanager --licenses
-            expect {
-              \"Review licenses that have not been accepted (y/N)?\" { send \"y\r\"; exp_continue }
-              \"Accept? (y/N):\" { send \"y\r\"; exp_continue }
-              \"Do you accept the license\" { send \"y\r\"; exp_continue }
-              timeout { exit 1 }
-              eof { exit 0 }
-            }
-          "
 
       - name: Verify Android SDK setup
         run: |
