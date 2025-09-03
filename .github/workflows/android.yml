@@ -59,7 +59,7 @@ jobs:
       - name: Second attempt - Install Android SDK components (should work now)
         uses: android-actions/setup-android@v3
         with:
-          packages: |
+          packages: >-
             platform-tools
             platforms;android-34
             build-tools;34.0.0
