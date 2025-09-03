@@ -36,28 +36,23 @@ jobs:
         run: |
           mkdir -p $ANDROID_HOME/licenses
 
-      - name: Accept all Android SDK licenses (multiple methods)
+      - name: Accept Android SDK licenses (nuclear option)
         run: |
-          # Method 1: Pre-accept common licenses
-          echo "24333f8a63b6825ea9c5514f83c2829b004d1fee" > $ANDROID_HOME/licenses/android-googletv-license
-          echo "d56f5187479451eabf01fb78af6dfcb131a6481e" > $ANDROID_HOME/licenses/android-sdk-license
-          echo "84831b9409646a918e30573bab4c9c91346d8abd" > $ANDROID_HOME/licenses/android-sdk-preview-license
-          echo "d975f751698a77b662f1254ddbeed3901e976f5a" > $ANDROID_HOME/licenses/intel-android-extra-license
-          echo "8933bad161af4178b1185d1a37fbf41ea5269c55" > $ANDROID_HOME/licenses/mips-android-sysimage-license
-          
-          # Method 2: Use sdkmanager with cmdline-tools
-          export PATH="$ANDROID_HOME/cmdline-tools/latest/bin:$PATH"
-          yes | sdkmanager --licenses > /dev/null 2>&1 || true
-          
-          # Method 3: Alternative path for sdkmanager
-          if [ -f "$ANDROID_HOME/tools/bin/sdkmanager" ]; then
-            yes | $ANDROID_HOME/tools/bin/sdkmanager --licenses > /dev/null 2>&1 || true
-          fi
-          
-          # Method 4: Direct license acceptance
-          echo "y" | $ANDROID_HOME/cmdline-tools/latest/bin/sdkmanager "platforms;android-34" > /dev/null 2>&1 || true
-          echo "y" | $ANDROID_HOME/cmdline-tools/latest/bin/sdkmanager "build-tools;34.0.0" > /dev/null 2>&1 || true
-          echo "y" | $ANDROID_HOME/cmdline-tools/latest/bin/sdkmanager --licenses > /dev/null 2>&1 || true
+          # Install expect for interactive automation
+          sudo apt-get update && sudo apt-get install -y expect
+
+          # Use expect to handle the interactive prompts
+          expect -c "
+            set timeout 300
+            spawn $ANDROID_HOME/cmdline-tools/latest/bin/sdkmanager --licenses
+            expect {
+              \"Review licenses that have not been accepted (y/N)?\" { send \"y\r\"; exp_continue }
+              \"Accept? (y/N):\" { send \"y\r\"; exp_continue }
+              \"Do you accept the license\" { send \"y\r\"; exp_continue }
+              timeout { exit 1 }
+              eof { exit 0 }
+            }
+          "
 
       - name: Verify Android SDK setup
         run: |
