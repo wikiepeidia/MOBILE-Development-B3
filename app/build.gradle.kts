@@ -11,11 +11,11 @@ plugins {
 }
 
 android {
-    namespace = "vn.edu.usth.weather"
+    namespace = "vn.edu.usth.usthweather"
     compileSdk = 36
 
     defaultConfig {
-        applicationId = "vn.edu.usth.weather"
+        applicationId = "vn.edu.usth.usthweather"
         minSdk = 24
         targetSdk = 36
         versionCode = 1

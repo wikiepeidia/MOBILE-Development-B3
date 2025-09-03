@@ -6,17 +6,17 @@
  * Vestibulum commodo. Ut rhoncus gravida arcu.
  */
 
-package vn.edu.usth.weather;
-
-import static org.junit.Assert.assertEquals;
+package vn.edu.usth.usthweather;
 
 import android.content.Context;
 
-import androidx.test.ext.junit.runners.AndroidJUnit4;
 import androidx.test.platform.app.InstrumentationRegistry;
+import androidx.test.ext.junit.runners.AndroidJUnit4;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
+
+import static org.junit.Assert.*;
 
 /**
  * Instrumented test, which will execute on an Android device.
@@ -29,6 +29,6 @@ public class ExampleInstrumentedTest {
     public void useAppContext() {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getInstrumentation().getTargetContext();
-        assertEquals("vn.edu.usth.weather", appContext.getPackageName());
+        assertEquals("vn.edu.usth.usthweather", appContext.getPackageName());
     }
 }

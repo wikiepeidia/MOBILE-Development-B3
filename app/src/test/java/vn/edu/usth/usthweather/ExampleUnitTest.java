@@ -6,11 +6,11 @@
  * Vestibulum commodo. Ut rhoncus gravida arcu.
  */
 
-package vn.edu.usth.weather;
-
-import static org.junit.Assert.assertEquals;
+package vn.edu.usth.usthweather;
 
 import org.junit.Test;
+
+import static org.junit.Assert.*;
 
 /**
  * Example local unit test, which will execute on the development machine (host).
