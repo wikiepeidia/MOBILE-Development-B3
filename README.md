@@ -13,3 +13,16 @@
 * Create a new project in Android Studio
 * Package: `vn.edu.usth.weather`
 * Create hello world text
+
+### Practical 2: Activity
+
+* NEW `weatheractivity`
+
+### Practical 3: Fragment
+
+* new: `forcastfragment`
+
+### Practical 4: Views
+
+* icon weather set from <u>https://github.com/Makin-Things/weather-icons/tree/main/static </u>
+* Linear layout

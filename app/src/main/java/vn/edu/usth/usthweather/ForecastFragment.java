@@ -3,12 +3,13 @@
  * All rights reserved.
  * Project: USTH Weather
  * File: ForecastFragment.java
- * Created: 8/9/2025 10:33
- * Last Modified: 8/9/2025 10:33
+ * Created: 8/9/2025 10:47
+ * Last Modified: 8/9/2025 10:47
  */
 
 package vn.edu.usth.usthweather;
 
+import android.annotation.SuppressLint;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -25,13 +26,14 @@ public class ForecastFragment extends Fragment {
 
     }
 
+    @SuppressLint("ResourceType")
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         // Inflate your layout
         ForecastFragment firstFragment = new ForecastFragment();
         assert getFragmentManager() != null;
         getFragmentManager().beginTransaction().add(
-                R.id.container, firstFragment).commit(); //TODO FIX LABWORK 3
+                R.layout.container, firstFragment).commit(); //TODO FIX LABWORK 3
         return inflater.inflate(R.layout.fragment_forecast, container, false);
     }
 
@@ -40,6 +42,7 @@ public class ForecastFragment extends Fragment {
         assert view != null;
         view.setBackgroundColor(color);
     }
+
 }
 
 

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Copyright (c) 2025
+  ~ All rights reserved.
+  ~ Project: USTH Weather
+  ~ File: container.xml
+  ~ Created: 8/9/2025 10:47
+  ~ Last Modified: 8/9/2025 10:47
+  -->
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+</FrameLayout>

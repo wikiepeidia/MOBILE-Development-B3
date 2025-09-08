@@ -3,8 +3,8 @@
   ~ All rights reserved.
   ~ Project: USTH Weather
   ~ File: fragment_forecast.xml
-  ~ Created: 8/9/2025 10:33
-  ~ Last Modified: 8/9/2025 10:33
+  ~ Created: 8/9/2025 10:47
+  ~ Last Modified: 8/9/2025 10:47
   -->
 
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
@@ -23,3 +23,4 @@
         android:text="@string/hello_blank_fragment" />
 
 </FrameLayout>
+
