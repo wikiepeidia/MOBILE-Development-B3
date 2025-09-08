@@ -1,5 +1,6 @@
 <component name="CopyrightManager">
   <copyright>
+    <option name="notice" value="Copyright (c) &amp;#36;today.year &#10;All rights reserved.&#10;Project: &amp;#36;project.name&#10;File: &amp;#36;file.fileName&#10;Created: &amp;#36;today.day/&amp;#36;today.month/&amp;#36;today.year &amp;#36;today.hour:&amp;#36;today.minute&#10;Last Modified: &amp;#36;today.day/&amp;#36;today.month/&amp;#36;today.year &amp;#36;today.hour:&amp;#36;today.minute" />
     <option name="myName" value="wikiepeidia" />
   </copyright>
 </component>

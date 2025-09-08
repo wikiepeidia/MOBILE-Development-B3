@@ -1,9 +1,10 @@
 /*
- * Copyright (c) 2025. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
- * Morbi non lorem porttitor neque feugiat blandit. Ut vitae ipsum eget quam lacinia accumsan.
- * Etiam sed turpis ac ipsum condimentum fringilla. Maecenas magna.
- * Proin dapibus sapien vel ante. Aliquam erat volutpat. Pellentesque sagittis ligula eget metus.
- * Vestibulum commodo. Ut rhoncus gravida arcu.
+ * Copyright (c) 2025
+ * All rights reserved.
+ * Project: USTH Weather
+ * File: WeatherActivity.java
+ * Created: 8/9/2025 10:33
+ * Last Modified: 8/9/2025 10:33
  */
 
 package vn.edu.usth.usthweather;
@@ -30,6 +31,8 @@ public class WeatherActivity extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
+        // Create a new Fragment to be placed in the activity l
+
     }
 
     @Override
@@ -61,4 +64,6 @@ public class WeatherActivity extends AppCompatActivity {
         super.onDestroy();
         Log.i(TAG, "onDestroy");
     }
+
+
 }
