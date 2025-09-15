@@ -1,0 +1,51 @@
+<!--
+  ~ Copyright (c) 2025
+  ~ All rights reserved.
+  ~ Project: USTH Weather
+  ~ File: very_hot.xml
+  ~ Created: 15/9/2025 9:8
+  ~ Last Modified: 15/9/2025 9:8
+  -->
+
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:width="48dp"
+    android:height="48dp"
+    android:viewportWidth="48"
+    android:viewportHeight="48">
+    <group>
+        <path
+            android:fillColor="#FFABABAB"
+            android:fillType="evenOdd"
+            android:pathData="M35.58 4a6.5 6.5 0 0 0-6.5 6.5v19.36A9.97 9.97 0 0 0 26 37.08c0 5.52 4.48 10 10 10s10-4.48 10-10a9.97 9.97 0 0 0-3.08-7.22v-0.05V10.5a6.5 6.5 0 0 0-6.5-6.5h-0.84Z" />
+        <path
+            android:fillColor="#FFFFFFFF"
+            android:fillType="evenOdd"
+            android:pathData="M36 6.51a3.75 3.75 0 0 0-3.75 3.75v21.01a6.92 6.92 0 1 0 7.5 0v-21A3.75 3.75 0 0 0 36 6.5Z" />
+        <path
+            android:fillColor="#FFEA4335"
+            android:pathData="M36 34a3.75 3.75 0 1 1 0 7.5 3.75 3.75 0 0 1 0-7.5Z" />
+        <path
+            android:fillColor="#FFEA4335"
+            android:pathData="M36 12a1.33 1.33 0 0 1 1.33 1.33v21.34a1.33 1.33 0 1 1-2.66 0V13.33A1.33 1.33 0 0 1 36 12Z" />
+        <path
+            android:fillType="evenOdd"
+            android:pathData="M24.9 44.17a7.92 7.92 0 0 1-8.98-1 7.92 7.92 0 0 0-4.67-1.93 7.92 7.92 0 0 1-7.36-7.36 7.92 7.92 0 0 0-1.94-4.67 7.92 7.92 0 0 1 0-10.42 7.92 7.92 0 0 0 1.94-4.67 7.92 7.92 0 0 1 7.36-7.36 7.92 7.92 0 0 0 4.67-1.93 7.92 7.92 0 0 1 10.41 0L27 5.34a9.19 9.19 0 0 0-0.78 3.72v18.56c-2.21 3.41-3.08 5.9-3.08 10.03 0 2.4 0.6 4.63 1.77 6.52Z">
+            <aapt:attr name="android:fillColor">
+                <gradient
+                    android:type="linear"
+                    android:startX="21.09"
+                    android:startY="-30.26"
+                    android:endX="19.38"
+                    android:endY="64.19">
+                    <item
+                        android:color="#FFFCCC41"
+                        android:offset="0.29" />
+                    <item
+                        android:color="#FFE34E00"
+                        android:offset="1" />
+                </gradient>
+            </aapt:attr>
+        </path>
+    </group>
+</vector>

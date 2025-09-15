@@ -1,0 +1,90 @@
+<!--
+  ~ Copyright (c) 2025
+  ~ All rights reserved.
+  ~ Project: USTH Weather
+  ~ File: sunny_with_cloudy_light.xml
+  ~ Created: 15/9/2025 9:8
+  ~ Last Modified: 15/9/2025 9:8
+  -->
+
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:width="49dp"
+    android:height="49dp"
+    android:viewportWidth="49"
+    android:viewportHeight="49">
+    <group>
+        <path android:pathData="M27.05 5.92a6.21 6.21 0 0 1 5.77 5.77 6.21 6.21 0 0 0 1.52 3.66 6.21 6.21 0 0 1 0 8.17 6.21 6.21 0 0 0-1.52 3.66 6.21 6.21 0 0 1-5.77 5.77 6.21 6.21 0 0 0-3.67 1.52 6.21 6.21 0 0 1-8.16 0 6.21 6.21 0 0 0-3.66-1.52 6.21 6.21 0 0 1-5.78-5.77 6.21 6.21 0 0 0-1.51-3.66 6.21 6.21 0 0 1 0-8.17 6.21 6.21 0 0 0 1.51-3.66 6.21 6.21 0 0 1 5.78-5.77 6.21 6.21 0 0 0 3.66-1.52 6.21 6.21 0 0 1 8.16 0 6.21 6.21 0 0 0 3.67 1.52Z">
+            <aapt:attr name="android:fillColor">
+                <gradient
+                    android:type="radial"
+                    android:centerX="0"
+                    android:centerY="0"
+                    android:gradientRadius="1">
+                    <item
+                        android:color="#FFFFBB29"
+                        android:offset="0.02" />
+                    <item
+                        android:color="#FFFCB224"
+                        android:offset="0.53" />
+                    <item
+                        android:color="#FFE47100"
+                        android:offset="0.99" />
+                </gradient>
+            </aapt:attr>
+        </path>
+        <path android:pathData="M24.94 46.42H24.9c-3.03 0-5.47-2.44-5.47-5.43 0-0.22 0.01-0.44 0.04-0.66 0.02-0.15 0.18-0.33 0.47-0.35a10.18 10.18 0 0 0 6.07-2.5l-0.32-0.37 0.32 0.37a2.21 2.21 0 0 1 1.3-0.54 10.21 10.21 0 0 0 9.26-7.86c0.06-0.27 0.26-0.42 0.44-0.42h0.32c4.94 0 8.95 3.97 8.95 8.87 0 4.8-3.82 8.7-8.6 8.88h-0.19-12.55Z">
+            <aapt:attr name="android:fillColor">
+                <gradient
+                    android:type="radial"
+                    android:centerX="0"
+                    android:centerY="0"
+                    android:gradientRadius="1">
+                    <item
+                        android:color="#FFB4B4B4"
+                        android:offset="0" />
+                    <item
+                        android:color="#FFB4B4B4"
+                        android:offset="0.3" />
+                    <item
+                        android:color="#FFE3E3E3"
+                        android:offset="1" />
+                </gradient>
+            </aapt:attr>
+        </path>
+        <path android:pathData="M24.94 46.42H24.9c-3.03 0-5.47-2.44-5.47-5.43 0-0.22 0.01-0.44 0.04-0.66 0.02-0.15 0.18-0.33 0.47-0.35a10.18 10.18 0 0 0 6.07-2.5l-0.32-0.37 0.32 0.37a2.21 2.21 0 0 1 1.3-0.54 10.21 10.21 0 0 0 9.26-7.86c0.06-0.27 0.26-0.42 0.44-0.42h0.32c4.94 0 8.95 3.97 8.95 8.87 0 4.8-3.82 8.7-8.6 8.88h-0.19-12.55Z">
+            <aapt:attr name="android:strokeColor">
+                <gradient
+                    android:type="linear"
+                    android:startX="36.48"
+                    android:startY="36.93"
+                    android:endX="40.72"
+                    android:endY="46.01">
+                    <item
+                        android:color="#0080868B"
+                        android:offset="0" />
+                    <item
+                        android:color="#FF80868B"
+                        android:offset="1" />
+                </gradient>
+            </aapt:attr>
+        </path>
+        <path android:pathData="M24.94 46.42H24.9c-3.03 0-5.47-2.44-5.47-5.43 0-0.22 0.01-0.44 0.04-0.66 0.02-0.15 0.18-0.33 0.47-0.35a10.18 10.18 0 0 0 6.07-2.5l-0.32-0.37 0.32 0.37a2.21 2.21 0 0 1 1.3-0.54 10.21 10.21 0 0 0 9.26-7.86c0.06-0.27 0.26-0.42 0.44-0.42h0.32c4.94 0 8.95 3.97 8.95 8.87 0 4.8-3.82 8.7-8.6 8.88h-0.19-12.55Z">
+            <aapt:attr name="android:strokeColor">
+                <gradient
+                    android:type="linear"
+                    android:startX="43.45"
+                    android:startY="28.15"
+                    android:endX="21.35"
+                    android:endY="36.63">
+                    <item
+                        android:color="#FF81878C"
+                        android:offset="0" />
+                    <item
+                        android:color="#00C3C5C6"
+                        android:offset="1" />
+                </gradient>
+            </aapt:attr>
+        </path>
+    </group>
+</vector>

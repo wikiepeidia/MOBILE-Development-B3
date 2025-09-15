@@ -1,0 +1,74 @@
+<!--
+  ~ Copyright (c) 2025
+  ~ All rights reserved.
+  ~ Project: USTH Weather
+  ~ File: isolated_scattered_thunderstorms_day.xml
+  ~ Created: 15/9/2025 9:8
+  ~ Last Modified: 15/9/2025 9:8
+  -->
+
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:width="48dp"
+    android:height="48dp"
+    android:viewportWidth="48"
+    android:viewportHeight="48">
+    <path android:pathData="M20.76 4.94a4.62 4.62 0 0 1 4.3 4.3 4.62 4.62 0 0 0 1.13 2.72 4.62 4.62 0 0 1 0 6.08 4.62 4.62 0 0 0-1.13 2.72 4.62 4.62 0 0 1-4.3 4.3 4.62 4.62 0 0 0-2.72 1.12 4.62 4.62 0 0 1-6.08 0 4.62 4.62 0 0 0-2.72-1.12 4.62 4.62 0 0 1-4.3-4.3 4.62 4.62 0 0 0-1.13-2.72 4.62 4.62 0 0 1 0-6.08 4.62 4.62 0 0 0 1.13-2.72 4.62 4.62 0 0 1 4.3-4.3 4.62 4.62 0 0 0 2.72-1.13 4.62 4.62 0 0 1 6.08 0 4.62 4.62 0 0 0 2.72 1.13Z">
+        <aapt:attr name="android:fillColor">
+            <gradient
+                android:type="linear"
+                android:startX="6.25"
+                android:startY="-3.08"
+                android:endX="23.17"
+                android:endY="34.83">
+                <item
+                    android:color="#FFF1C100"
+                    android:offset="0.37" />
+                <item
+                    android:color="#FFF39607"
+                    android:offset="1" />
+            </gradient>
+        </aapt:attr>
+    </path>
+    <path
+        android:fillType="evenOdd"
+        android:pathData="M21.13 31l5.75-11.4c0.59-1.43 1.32-2.35 2.88-2.35h17.18C46.97 16.84 47 16.43 47 16c0-8.29-7-15-15.6-15C23.66 1 17.26 6.38 16 13.45a10.07 10.07 0 0 0-5.15-1.4C5.41 12.05 1 16.29 1 21.52c0 5.03 4.06 9.13 9.2 9.45V31h10.93Z">
+        <aapt:attr name="android:fillColor">
+            <gradient
+                android:type="linear"
+                android:startX="34.19"
+                android:startY="8.82"
+                android:endX="8.22"
+                android:endY="31.11">
+                <item
+                    android:color="#FFB5B5B5"
+                    android:offset="0" />
+                <item
+                    android:color="#FFE3E3E3"
+                    android:offset="1" />
+            </gradient>
+        </aapt:attr>
+    </path>
+    <path
+        android:fillColor="#FF0B57D0"
+        android:pathData="M17 33l-4.24 4.1a5.66 5.66 0 0 0 0 8.2c2.35 2.27 6.15 2.27 8.48 0a5.66 5.66 0 0 0 0-8.2l-0.04-0.03L17 33ZM7 22l-4.24 4.1a5.66 5.66 0 0 0 0 8.2c2.35 2.27 6.15 2.27 8.48 0a5.66 5.66 0 0 0 0-8.2l-0.04-0.03L7 22Z" />
+    <path
+        android:fillType="evenOdd"
+        android:pathData="M30.67 21L24 34.75h6L29.25 47 44 30.96l-5.33-0.03L44 21H30.67Z">
+        <aapt:attr name="android:fillColor">
+            <gradient
+                android:type="linear"
+                android:startX="21.16"
+                android:startY="22.4"
+                android:endX="54.14"
+                android:endY="48.41">
+                <item
+                    android:color="#FFF1C100"
+                    android:offset="0.19" />
+                <item
+                    android:color="#FFF39607"
+                    android:offset="0.71" />
+            </gradient>
+        </aapt:attr>
+    </path>
+</vector>

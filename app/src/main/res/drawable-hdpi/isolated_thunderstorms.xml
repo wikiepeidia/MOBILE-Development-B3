@@ -1,0 +1,57 @@
+<!--
+  ~ Copyright (c) 2025
+  ~ All rights reserved.
+  ~ Project: USTH Weather
+  ~ File: isolated_thunderstorms.xml
+  ~ Created: 15/9/2025 9:8
+  ~ Last Modified: 15/9/2025 9:8
+  -->
+
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:width="48dp"
+    android:height="48dp"
+    android:viewportWidth="48"
+    android:viewportHeight="48">
+    <path
+        android:fillType="evenOdd"
+        android:pathData="M21.13 31l5.75-11.78c0.59-1.47 1.32-2.43 2.88-2.43h17.18C46.97 16.36 47 15.94 47 15.5 47 6.94 40 0 31.4 0 23.66 0 17.26 5.55 16 12.87a9.82 9.82 0 0 0-5.15-1.45C5.41 11.42 1 15.8 1 21.2c0 5.2 4.06 9.43 9.2 9.76V31h10.93Z">
+        <aapt:attr name="android:fillColor">
+            <gradient
+                android:type="linear"
+                android:startX="34.19"
+                android:startY="8.08"
+                android:endX="7.5"
+                android:endY="30.25">
+                <item
+                    android:color="#FFB5B5B5"
+                    android:offset="0" />
+                <item
+                    android:color="#FFE3E3E3"
+                    android:offset="1" />
+            </gradient>
+        </aapt:attr>
+    </path>
+    <path
+        android:fillColor="#FF0B57D0"
+        android:pathData="M18 33l-4.24 4.1a5.66 5.66 0 0 0 0 8.2c2.35 2.27 6.15 2.27 8.48 0a5.66 5.66 0 0 0 0-8.2l-0.04-0.03L18 33ZM7 22l-4.24 4.1a5.66 5.66 0 0 0 0 8.2c2.35 2.27 6.15 2.27 8.48 0a5.66 5.66 0 0 0 0-8.2l-0.04-0.03L7 22Z" />
+    <path
+        android:fillType="evenOdd"
+        android:pathData="M30.67 21L24 34.75h6L29.25 47 44 30.96l-5.33-0.03L44 21H30.67Z">
+        <aapt:attr name="android:fillColor">
+            <gradient
+                android:type="linear"
+                android:startX="21.16"
+                android:startY="22.4"
+                android:endX="54.14"
+                android:endY="48.41">
+                <item
+                    android:color="#FFF1C100"
+                    android:offset="0.19" />
+                <item
+                    android:color="#FFF39607"
+                    android:offset="0.71" />
+            </gradient>
+        </aapt:attr>
+    </path>
+</vector>

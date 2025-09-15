@@ -1,0 +1,39 @@
+<!--
+  ~ Copyright (c) 2025
+  ~ All rights reserved.
+  ~ Project: USTH Weather
+  ~ File: snow_with_cloudy_dark.xml
+  ~ Created: 15/9/2025 9:8
+  ~ Last Modified: 15/9/2025 9:8
+  -->
+
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:width="49dp"
+    android:height="49dp"
+    android:viewportWidth="49"
+    android:viewportHeight="49">
+    <path
+        android:fillType="evenOdd"
+        android:pathData="M19.6 38.27A5.87 5.87 0 0 0 18.93 41c0 3.28 2.67 5.93 5.96 5.93h12.8c5.05-0.2 9.09-4.32 9.09-9.38 0-5.19-4.23-9.39-9.45-9.39-0.75 0-1.49 0.1-2.19 0.26a20.1 20.1 0 0 1-7.04 7.1l-0.42 0.24a19.88 19.88 0 0 1-8.07 2.5Z">
+        <aapt:attr name="android:fillColor">
+            <gradient
+                android:type="linear"
+                android:startX="41.98"
+                android:startY="52"
+                android:endX="27.02"
+                android:endY="38.59">
+                <item
+                    android:color="#FF757575"
+                    android:offset="0.25" />
+                <item
+                    android:color="#FFABABAB"
+                    android:offset="1" />
+            </gradient>
+        </aapt:attr>
+    </path>
+    <path
+        android:fillColor="#FFABABAB"
+        android:fillType="evenOdd"
+        android:pathData="M26.37 29.87l-1.5-5.58-2.63-1.52a6.24 6.24 0 0 1-2.72 1.58v3.03l4.08 4.09-2.33 2.33-3.4-3.4-3.4 3.4-2.34-2.33 4.09-4.09v-3.02a6.24 6.24 0 0 1-2.75-1.57l-2.6 1.5-1.5 5.58-3.2-0.85 1.25-4.65-4.64-1.25 0.85-3.18 5.58 1.5 2.6-1.5a6.25 6.25 0 0 1 0-3.2l-2.6-1.49-5.58 1.5-0.85-3.2 4.64-1.24-1.24-4.64L9.37 6.8l1.5 5.58 2.59 1.5a6.24 6.24 0 0 1 2.76-1.59v-3l-4.09-4.08 2.33-2.34 3.4 3.4 3.41-3.4 2.33 2.34-4.08 4.08v3.02a6.24 6.24 0 0 1 2.73 1.59l2.62-1.52 1.5-5.58 3.18 0.86-1.24 4.64 4.65 1.25-0.86 3.19-5.58-1.5-2.63 1.52a6.25 6.25 0 0 1 0 3.14l2.63 1.52 5.58-1.5 0.86 3.2-4.65 1.24 1.25 4.65-3.2 0.85ZM14.9 18.33a2.94 2.94 0 1 1 5.89 0 2.94 2.94 0 0 1-5.9 0Z" />
+</vector>

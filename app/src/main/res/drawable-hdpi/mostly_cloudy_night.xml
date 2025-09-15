@@ -1,0 +1,54 @@
+<!--
+  ~ Copyright (c) 2025
+  ~ All rights reserved.
+  ~ Project: USTH Weather
+  ~ File: mostly_cloudy_night.xml
+  ~ Created: 15/9/2025 9:8
+  ~ Last Modified: 15/9/2025 9:8
+  -->
+
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:width="48dp"
+    android:height="48dp"
+    android:viewportWidth="48"
+    android:viewportHeight="48">
+    <path
+        android:fillType="evenOdd"
+        android:pathData="M16.69 2c-2.08 2.51-3.32 5.7-3.32 9.16 0 8.1 6.79 14.67 15.16 14.67H29c-2.78 3.35-7.05 5.5-11.84 5.5C8.79 31.33 2 24.77 2 16.66 2 8.71 8.53 2.24 16.69 2Z">
+        <aapt:attr name="android:fillColor">
+            <gradient
+                android:type="linear"
+                android:startX="-0.35"
+                android:startY="2"
+                android:endX="37.86"
+                android:endY="38.05">
+                <item
+                    android:color="#FFA8C7FA"
+                    android:offset="0" />
+                <item
+                    android:color="#FF4C8DF6"
+                    android:offset="0.77" />
+            </gradient>
+        </aapt:attr>
+    </path>
+    <path
+        android:fillType="evenOdd"
+        android:pathData="M47 31c0 7.98-6.49 14.5-14.67 14.97V46H10.2v-0.02C5.06 45.65 1 41.55 1 36.53c0-5.24 4.41-9.48 9.86-9.48 1.89 0 3.65 0.52 5.15 1.4C17.27 21.38 23.68 16 31.4 16 40.01 16 47 22.71 47 31Z">
+        <aapt:attr name="android:fillColor">
+            <gradient
+                android:type="linear"
+                android:startX="18.21"
+                android:startY="40.33"
+                android:endX="8.96"
+                android:endY="25.99">
+                <item
+                    android:color="#FFE3E3E3"
+                    android:offset="0" />
+                <item
+                    android:color="#FFF2F2F2"
+                    android:offset="1" />
+            </gradient>
+        </aapt:attr>
+    </path>
+</vector>

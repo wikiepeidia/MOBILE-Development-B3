@@ -1,0 +1,25 @@
+<!--
+  ~ Copyright (c) 2025
+  ~ All rights reserved.
+  ~ Project: USTH Weather
+  ~ File: snow_with_rain_dark.xml
+  ~ Created: 15/9/2025 9:8
+  ~ Last Modified: 15/9/2025 9:8
+  -->
+
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="49dp"
+    android:height="49dp"
+    android:viewportWidth="49"
+    android:viewportHeight="49">
+    <group>
+        <path
+            android:fillType="evenOdd"
+            android:fillColor="#FF7CACF8"
+            android:pathData="M28.24 35.15c-0.85 3.05-0.04 6.44 2.44 8.83 3.68 3.56 9.65 3.56 13.33 0 3.69-3.56 3.69-9.33 0-12.89a7.74 7.74 0 0 0-0.05-0.06l-6.48-6.25a0.2 0.2 0 0 0-0.27 0l-0.8 0.76a20.07 20.07 0 0 1-8.17 9.61Z" />
+        <path
+            android:fillType="evenOdd"
+            android:fillColor="#FFABABAB"
+            android:pathData="M24.87 24l1.5 5.58 3.19-0.86-1.25-4.64 4.65-1.25-0.86-3.19-5.58 1.5-2.63-1.52a6.26 6.26 0 0 0 0-3.14l2.63-1.52 5.58 1.5 0.86-3.2-4.65-1.24 1.25-4.65-3.2-0.85-1.49 5.58-2.62 1.52a6.24 6.24 0 0 0-2.73-1.6V9.02l4.08-4.08-2.33-2.34-3.4 3.4-3.4-3.4-2.34 2.33 4.09 4.09v3a6.24 6.24 0 0 0-2.76 1.59l-2.6-1.5-1.5-5.58-3.18 0.85 1.24 4.65-4.64 1.25 0.85 3.18 5.58-1.5 2.6 1.5a6.25 6.25 0 0 0 0 3.2l-2.6 1.49-5.58-1.5-0.85 3.2 4.64 1.24-1.24 4.64 3.19 0.86 1.5-5.58 2.6-1.5a6.24 6.24 0 0 0 2.75 1.57v3.02l-4.09 4.08 2.33 2.34 3.4-3.4 3.4 3.4 2.34-2.34-4.08-4.08v-3.03a6.24 6.24 0 0 0 2.72-1.58L24.87 24Zm-7.03-8.9a2.94 2.94 0 1 0 0 5.89 2.94 2.94 0 0 0 0-5.9Z" />
+    </group>
+</vector>

@@ -1,0 +1,86 @@
+<!--
+  ~ Copyright (c) 2025
+  ~ All rights reserved.
+  ~ Project: USTH Weather
+  ~ File: rain_with_cloudy_light.xml
+  ~ Created: 15/9/2025 9:8
+  ~ Last Modified: 15/9/2025 9:8
+  -->
+
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:width="49dp"
+    android:height="49dp"
+    android:viewportWidth="49"
+    android:viewportHeight="49">
+    <path android:pathData="M16.55 2.21a0.2 0.2 0 0 0-0.28 0l-9.54 9.22c-5.34 5.16-5.34 13.54 0 18.7 5.35 5.17 14.01 5.17 19.36 0 5.34-5.16 5.34-13.54 0-18.7A13.12 13.12 0 0 0 26 11.35L16.55 2.2Z">
+        <aapt:attr name="android:fillColor">
+            <gradient
+                android:type="linear"
+                android:startX="16.41"
+                android:startY="2.08"
+                android:endX="16.41"
+                android:endY="32.73">
+                <item
+                    android:color="#FF2E7AF5"
+                    android:offset="0" />
+                <item
+                    android:color="#FF0B57D0"
+                    android:offset="1" />
+            </gradient>
+        </aapt:attr>
+    </path>
+    <path android:pathData="M24.94 45.7h-0.05c-3.02 0-5.46-2.43-5.46-5.43 0-0.9 0.22-1.73 0.6-2.48a0.44 0.44 0 0 1 0.3-0.21 17.83 17.83 0 0 0 5.82-2.42c0.14-0.08 0.26-0.1 0.35-0.06 0.28 0.1 0.6 0.24 0.86 0.36a17 17 0 0 1 0.4 0.2h0.02l0.56 0.28 0.16-0.59c1.61-5.97 6.35-7.42 8.83-7.42 4.94 0 8.95 3.98 8.95 8.89 0 4.78-3.82 8.7-8.6 8.87l-0.19 0.01H24.94Z">
+        <aapt:attr name="android:fillColor">
+            <gradient
+                android:type="radial"
+                android:centerX="0"
+                android:centerY="0"
+                android:gradientRadius="1">
+                <item
+                    android:color="#FFB4B4B4"
+                    android:offset="0" />
+                <item
+                    android:color="#FFB4B4B4"
+                    android:offset="0.3" />
+                <item
+                    android:color="#FFE3E3E3"
+                    android:offset="1" />
+            </gradient>
+        </aapt:attr>
+    </path>
+    <path android:pathData="M24.94 45.7h-0.05c-3.02 0-5.46-2.43-5.46-5.43 0-0.9 0.22-1.73 0.6-2.48a0.44 0.44 0 0 1 0.3-0.21 17.83 17.83 0 0 0 5.82-2.42c0.14-0.08 0.26-0.1 0.35-0.06 0.28 0.1 0.6 0.24 0.86 0.36a17 17 0 0 1 0.4 0.2h0.02l0.56 0.28 0.16-0.59c1.61-5.97 6.35-7.42 8.83-7.42 4.94 0 8.95 3.98 8.95 8.89 0 4.78-3.82 8.7-8.6 8.87l-0.19 0.01H24.94Z">
+        <aapt:attr name="android:strokeColor">
+            <gradient
+                android:type="linear"
+                android:startX="36.48"
+                android:startY="36.21"
+                android:endX="40.72"
+                android:endY="45.29">
+                <item
+                    android:color="#0080868B"
+                    android:offset="0" />
+                <item
+                    android:color="#FF80868B"
+                    android:offset="1" />
+            </gradient>
+        </aapt:attr>
+    </path>
+    <path android:pathData="M24.94 45.7h-0.05c-3.02 0-5.46-2.43-5.46-5.43 0-0.9 0.22-1.73 0.6-2.48a0.44 0.44 0 0 1 0.3-0.21 17.83 17.83 0 0 0 5.82-2.42c0.14-0.08 0.26-0.1 0.35-0.06 0.28 0.1 0.6 0.24 0.86 0.36a17 17 0 0 1 0.4 0.2h0.02l0.56 0.28 0.16-0.59c1.61-5.97 6.35-7.42 8.83-7.42 4.94 0 8.95 3.98 8.95 8.89 0 4.78-3.82 8.7-8.6 8.87l-0.19 0.01H24.94Z">
+        <aapt:attr name="android:strokeColor">
+            <gradient
+                android:type="linear"
+                android:startX="43.45"
+                android:startY="27.43"
+                android:endX="21.35"
+                android:endY="35.91">
+                <item
+                    android:color="#FF81878C"
+                    android:offset="0" />
+                <item
+                    android:color="#00C3C5C6"
+                    android:offset="1" />
+            </gradient>
+        </aapt:attr>
+    </path>
+</vector>

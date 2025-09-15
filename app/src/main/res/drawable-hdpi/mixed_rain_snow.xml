@@ -1,0 +1,48 @@
+<!--
+  ~ Copyright (c) 2025
+  ~ All rights reserved.
+  ~ Project: USTH Weather
+  ~ File: mixed_rain_snow.xml
+  ~ Created: 15/9/2025 9:8
+  ~ Last Modified: 15/9/2025 9:8
+  -->
+
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:width="48dp"
+    android:height="48dp"
+    android:viewportWidth="48"
+    android:viewportHeight="48">
+    <path
+        android:fillType="evenOdd"
+        android:pathData="M47 16.5c0 8.36-6.66 15.17-15 15.49V32H11h-0.14C5.4 32 1 27.62 1 22.2c0-5.4 4.41-9.79 9.86-9.79 1.89 0 3.65 0.53 5.15 1.44C17.27 6.56 23.68 1 31.4 1 40.01 1 47 7.94 47 16.5Z">
+        <aapt:attr name="android:fillColor">
+            <gradient
+                android:type="linear"
+                android:startX="30.9"
+                android:startY="30.08"
+                android:endX="8.56"
+                android:endY="11.53">
+                <item
+                    android:color="#FFB5B5B5"
+                    android:offset="0" />
+                <item
+                    android:color="#FFE3E3E3"
+                    android:offset="1" />
+            </gradient>
+        </aapt:attr>
+    </path>
+    <path
+        android:fillColor="#FF757575"
+        android:fillType="evenOdd"
+        android:pathData="M19.13 41.4V47h1.74v-5.6l5.26 2.8 0.87-1.4-5.26-2.8L27 37.2l-0.87-1.4-5.26 2.8V33h-1.74v5.6l-5.26-2.8L13 37.2l5.26 2.8L13 42.8l0.87 1.4 5.26-2.8Z" />
+    <path
+        android:fillColor="#FF757575"
+        android:pathData="M19.13 41.4h0.15v-0.26l-0.22 0.12 0.07 0.13Zm0 5.6h-0.15v0.15h0.15V47Zm1.74 0v0.15h0.15V47h-0.15Zm0-5.6l0.07-0.14-0.22-0.12v0.25h0.15Zm5.26 2.8l-0.07 0.13 0.12 0.06 0.08-0.12-0.13-0.07ZM27 42.8l0.13 0.08 0.08-0.13-0.14-0.08L27 42.8ZM21.74 40l-0.07-0.13L21.42 40l0.25 0.13 0.07-0.13ZM27 37.2l0.07 0.13 0.14-0.08-0.08-0.13L27 37.2Zm-0.87-1.4l0.13-0.08-0.08-0.11-0.12 0.06 0.07 0.13Zm-5.26 2.8h-0.15v0.26l0.22-0.12-0.07-0.13Zm0-5.6h0.15v-0.15h-0.15V33Zm-1.74 0v-0.15h-0.15V33h0.15Zm0 5.6l-0.07 0.14 0.22 0.12V38.6h-0.15Zm-5.26-2.8l0.07-0.13-0.12-0.06-0.08 0.11 0.13 0.08ZM13 37.2l-0.13-0.08-0.08 0.13 0.14 0.08L13 37.2Zm5.26 2.8l0.07 0.13 0.25-0.13-0.25-0.13L18.26 40ZM13 42.8l-0.07-0.13-0.14 0.08 0.08 0.13L13 42.8Zm0.87 1.4l-0.13 0.08 0.08 0.11 0.12-0.06-0.07-0.13Zm5.11-2.8V47h0.3v-5.6h-0.3Zm0.15 5.75h1.74v-0.3h-1.74v0.3ZM21.02 47v-5.6h-0.3V47h0.3Zm-0.22-5.48l5.26 2.8 0.14-0.26-5.26-2.8-0.14 0.26Zm5.46 2.76l0.87-1.4-0.26-0.15L26 44.12l0.26 0.16Zm0.81-1.6l-5.26-2.81-0.14 0.26 5.26 2.8 0.14-0.26Zm-0.14-5.62l-5.26 2.8 0.14 0.27 5.26-2.8-0.14-0.27ZM26 35.88l0.87 1.4 0.26-0.16-0.87-1.4L26 35.88Zm-5.06 2.86l5.26-2.8-0.14-0.27-5.26 2.8 0.14 0.27Zm0.08-0.13V33h-0.3v5.6h0.3Zm-0.15-5.76h-1.74v0.3h1.74v-0.3ZM18.98 33v5.6h0.3V33h-0.3Zm0.22 5.48l-5.26-2.8-0.14 0.26 5.26 2.8 0.14-0.26Zm-5.46-2.75l-0.87 1.39 0.26 0.16 0.87-1.4-0.26-0.16Zm-0.81 1.6l5.26 2.8 0.14-0.26-5.26-2.8-0.14 0.26Zm0.14 5.6l5.26-2.8-0.14-0.26-5.26 2.8 0.14 0.27ZM14 44.13l-0.87-1.4-0.26 0.16 0.87 1.4 0.26-0.16Zm5.06-2.86l-5.26 2.8 0.14 0.27 5.26-2.8-0.14-0.27Z" />
+    <path
+        android:fillColor="#FF5E5E5E"
+        android:pathData="M37 35l5.66 5.66L37 46.3l-5.66-5.65L37 35Z" />
+    <path
+        android:fillColor="#FF0B57D0"
+        android:pathData="M37 19l-4.24 4.1a5.66 5.66 0 0 0 0 8.2c2.34 2.27 6.14 2.27 8.48 0a5.66 5.66 0 0 0 0-8.2l-0.04-0.04L37 19Z" />
+</vector>

@@ -1,0 +1,41 @@
+<!--
+  ~ Copyright (c) 2025
+  ~ All rights reserved.
+  ~ Project: USTH Weather
+  ~ File: sunny_with_rain_dark.xml
+  ~ Created: 15/9/2025 9:8
+  ~ Last Modified: 15/9/2025 9:8
+  -->
+
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:width="49dp"
+    android:height="49dp"
+    android:viewportWidth="49"
+    android:viewportHeight="49">
+    <group>
+        <path android:pathData="M27.04 5.52a6.21 6.21 0 0 1 5.78 5.78 6.21 6.21 0 0 0 1.51 3.66 6.21 6.21 0 0 1 0 8.16 6.21 6.21 0 0 0-1.51 3.67 6.21 6.21 0 0 1-5.78 5.77 6.21 6.21 0 0 0-3.66 1.52 6.21 6.21 0 0 1-8.17 0 6.21 6.21 0 0 0-3.66-1.52 6.21 6.21 0 0 1-5.77-5.77 6.21 6.21 0 0 0-1.52-3.67 6.21 6.21 0 0 1 0-8.16 6.21 6.21 0 0 0 1.52-3.66 6.21 6.21 0 0 1 5.77-5.78A6.21 6.21 0 0 0 15.21 4a6.21 6.21 0 0 1 8.17 0 6.21 6.21 0 0 0 3.66 1.52Z">
+            <aapt:attr name="android:fillColor">
+                <gradient
+                    android:type="radial"
+                    android:centerX="0"
+                    android:centerY="0"
+                    android:gradientRadius="1">
+                    <item
+                        android:color="#FFFFD535"
+                        android:offset="0.16" />
+                    <item
+                        android:color="#FFFFD323"
+                        android:offset="0.55" />
+                    <item
+                        android:color="#FFE2A93A"
+                        android:offset="0.97" />
+                </gradient>
+            </aapt:attr>
+        </path>
+        <path
+            android:fillColor="#FF7CACF8"
+            android:fillType="evenOdd"
+            android:pathData="M28.04 35.97c-0.46 2.79 0.42 5.74 2.64 7.89 3.68 3.56 9.65 3.56 13.34 0 3.68-3.56 3.68-9.33 0-12.89l-0.07-0.06-6.41-6.2a9.8 9.8 0 0 1-0.57 0.71 2.71 2.71 0 0 0-0.66 1.6 9.71 9.71 0 0 1-8.28 8.95Z" />
+    </group>
+</vector>

@@ -1,0 +1,33 @@
+<!--
+  ~ Copyright (c) 2025
+  ~ All rights reserved.
+  ~ Project: USTH Weather
+  ~ File: clear_day.xml
+  ~ Created: 15/9/2025 9:8
+  ~ Last Modified: 15/9/2025 9:8
+  -->
+
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:width="48dp"
+    android:height="48dp"
+    android:viewportWidth="48"
+    android:viewportHeight="48">
+    <path android:pathData="M33.88 6.76a7.92 7.92 0 0 1 7.36 7.36 7.92 7.92 0 0 0 1.93 4.67 7.92 7.92 0 0 1 0 10.42 7.91 7.91 0 0 0-1.93 4.67 7.92 7.92 0 0 1-7.36 7.36 7.91 7.91 0 0 0-4.67 1.93 7.92 7.92 0 0 1-10.42 0 7.91 7.91 0 0 0-4.67-1.93 7.92 7.92 0 0 1-7.36-7.36 7.91 7.91 0 0 0-1.93-4.67 7.92 7.92 0 0 1 0-10.42 7.92 7.92 0 0 0 1.93-4.67 7.92 7.92 0 0 1 7.36-7.36 7.91 7.91 0 0 0 4.67-1.93 7.92 7.92 0 0 1 10.42 0 7.91 7.91 0 0 0 4.67 1.93Z">
+        <aapt:attr name="android:fillColor">
+            <gradient
+                android:type="linear"
+                android:startX="21.08"
+                android:startY="-12.46"
+                android:endX="19.99"
+                android:endY="76.14">
+                <item
+                    android:color="#FFF1C100"
+                    android:offset="0.27" />
+                <item
+                    android:color="#FFF39607"
+                    android:offset="1" />
+            </gradient>
+        </aapt:attr>
+    </path>
+</vector>

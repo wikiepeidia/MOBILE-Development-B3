@@ -1,0 +1,52 @@
+<!--
+  ~ Copyright (c) 2025
+  ~ All rights reserved.
+  ~ Project: USTH Weather
+  ~ File: mostly_clear_day.xml
+  ~ Created: 15/9/2025 9:8
+  ~ Last Modified: 15/9/2025 9:8
+  -->
+
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:width="48dp"
+    android:height="48dp"
+    android:viewportWidth="48"
+    android:viewportHeight="48">
+    <path android:pathData="M34 7.16a8.02 8.02 0 0 1 7.44 7.45 8.02 8.02 0 0 0 1.96 4.73 8.02 8.02 0 0 1 0 10.54 8.03 8.03 0 0 0-1.95 4.72 8.02 8.02 0 0 1-7.46 7.45 8.02 8.02 0 0 0-4.72 1.96 8.02 8.02 0 0 1-10.54 0 8.02 8.02 0 0 0-4.72-1.96 8.02 8.02 0 0 1-7.46-7.45 8.03 8.03 0 0 0-1.95-4.72 8.02 8.02 0 0 1 0-10.54 8.02 8.02 0 0 0 1.95-4.73 8.02 8.02 0 0 1 7.46-7.45 8.03 8.03 0 0 0 4.72-1.95 8.02 8.02 0 0 1 10.54 0 8.03 8.03 0 0 0 4.72 1.95Z">
+        <aapt:attr name="android:fillColor">
+            <gradient
+                android:type="linear"
+                android:startX="21.05"
+                android:startY="-12.29"
+                android:endX="19.94"
+                android:endY="77.36">
+                <item
+                    android:color="#FFF1C100"
+                    android:offset="0.27" />
+                <item
+                    android:color="#FFF39607"
+                    android:offset="1" />
+            </gradient>
+        </aapt:attr>
+    </path>
+    <path
+        android:fillType="evenOdd"
+        android:pathData="M46 36c0 5.32-4.23 9.67-9.57 9.98V46h-0.5-0.1-0.12-13.2-0.08-0.08H22v-0.01c-3.35-0.22-6-2.96-6-6.3 0-3.5 2.88-6.32 6.43-6.32 1.23 0 2.38 0.34 3.36 0.93 0.82-4.71 5-8.3 10.03-8.3C41.44 26 46 30.48 46 36Z">
+        <aapt:attr name="android:fillColor">
+            <gradient
+                android:type="linear"
+                android:startX="27.23"
+                android:startY="42.22"
+                android:endX="21"
+                android:endY="32.79">
+                <item
+                    android:color="#FFFFFFFF"
+                    android:offset="0" />
+                <item
+                    android:color="#FFE9E9E9"
+                    android:offset="1" />
+            </gradient>
+        </aapt:attr>
+    </path>
+</vector>

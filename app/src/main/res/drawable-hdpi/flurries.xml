@@ -1,0 +1,42 @@
+<!--
+  ~ Copyright (c) 2025
+  ~ All rights reserved.
+  ~ Project: USTH Weather
+  ~ File: flurries.xml
+  ~ Created: 15/9/2025 9:8
+  ~ Last Modified: 15/9/2025 9:8
+  -->
+
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:width="48dp"
+    android:height="48dp"
+    android:viewportWidth="48"
+    android:viewportHeight="48">
+    <path
+        android:fillType="evenOdd"
+        android:pathData="M47 16.5c0 8.36-6.66 15.17-15 15.49V32H11h-0.14C5.4 32 1 27.62 1 22.2c0-5.4 4.41-9.79 9.86-9.79 1.89 0 3.65 0.53 5.15 1.44C17.27 6.56 23.68 1 31.4 1 40.01 1 47 7.94 47 16.5Z">
+        <aapt:attr name="android:fillColor">
+            <gradient
+                android:type="linear"
+                android:startX="30.9"
+                android:startY="30.08"
+                android:endX="8.56"
+                android:endY="11.53">
+                <item
+                    android:color="#FFB5B5B5"
+                    android:offset="0" />
+                <item
+                    android:color="#FFE3E3E3"
+                    android:offset="1" />
+            </gradient>
+        </aapt:attr>
+    </path>
+    <path
+        android:fillColor="#FF757575"
+        android:fillType="evenOdd"
+        android:pathData="M34.38 40v4h1.24v-4l3.76 2L40 41l-3.76-2L40 37l-0.62-1-3.76 2v-4h-1.24v4l-3.76-2L30 37l3.76 2L30 41l0.62 1 3.76-2Z" />
+    <path
+        android:fillColor="#FF757575"
+        android:pathData="M34.38 40h0.15v-0.26l-0.22 0.12 0.07 0.13Zm0 4h-0.15v0.15h0.15V44Zm1.24 0v0.15h0.15V44h-0.15Zm0-4l0.07-0.14-0.22-0.12V40h0.15Zm3.76 2l-0.07 0.13 0.12 0.07 0.08-0.12L39.38 42ZM40 41l0.13 0.08 0.08-0.13-0.14-0.08L40 41Zm-3.76-2l-0.07-0.13L35.92 39l0.25 0.13 0.07-0.13ZM40 37l0.07 0.13 0.14-0.08-0.08-0.13L40 37Zm-0.62-1l0.13-0.08-0.08-0.12-0.12 0.07 0.07 0.13Zm-3.76 2h-0.15v0.26l0.22-0.12L35.62 38Zm0-4h0.15v-0.15h-0.15V34Zm-1.24 0v-0.15h-0.15V34h0.15Zm0 4l-0.07 0.14 0.22 0.12V38h-0.15Zm-3.76-2l0.07-0.13-0.12-0.07-0.08 0.12 0.13 0.08ZM30 37l-0.13-0.08-0.08 0.13 0.14 0.08L30 37Zm3.76 2l0.07 0.13 0.24-0.13-0.24-0.13L33.76 39ZM30 41l-0.07-0.13-0.14 0.08 0.08 0.13L30 41Zm0.62 1l-0.13 0.08 0.08 0.12 0.12-0.07L30.62 42Zm3.6-2v4h0.3v-4h-0.3Zm0.16 4.15h1.24v-0.3h-1.24v0.3Zm1.4-0.15v-4h-0.3v4h0.3Zm-0.23-3.87l3.76 2 0.14-0.27-3.76-2-0.14 0.27Zm3.96 1.95l0.62-1-0.26-0.16-0.62 1 0.26 0.16Zm0.56-1.21l-3.76-2-0.14 0.26 3.76 2 0.14-0.26Zm-0.14-4l-3.76 2 0.14 0.26 3.76-2-0.14-0.27Zm-0.68-0.79l0.62 1 0.26-0.16-0.62-1-0.26 0.16Zm-3.56 2.06l3.76-2-0.14-0.27-3.76 2 0.14 0.27ZM35.77 38V34h-0.3v4h0.3Zm-0.15-4.16h-1.24v0.3h1.24v-0.3ZM34.22 34v4h0.3v-4h-0.3Zm0.23 3.87l-3.76-2-0.14 0.27 3.76 2 0.14-0.27Zm-3.96-1.95l-0.62 1 0.26 0.16 0.62-1-0.26-0.16Zm-0.56 1.2l3.76 2.01 0.14-0.26-3.76-2-0.14 0.26Zm0.14 4.02l3.76-2-0.14-0.27-3.76 2 0.14 0.27Zm0.68 0.78l-0.62-1-0.26 0.16 0.62 1 0.26-0.16Zm3.56-2.06l-3.76 2 0.14 0.27 3.76-2-0.14-0.27Z" />
+</vector>

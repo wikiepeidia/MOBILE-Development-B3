@@ -1,0 +1,43 @@
+<!--
+  ~ Copyright (c) 2025
+  ~ All rights reserved.
+  ~ Project: USTH Weather
+  ~ File: snow_with_sunny_dark.xml
+  ~ Created: 15/9/2025 9:8
+  ~ Last Modified: 15/9/2025 9:8
+  -->
+
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:width="49dp"
+    android:height="49dp"
+    android:viewportWidth="49"
+    android:viewportHeight="49">
+    <group>
+        <path
+            android:fillType="evenOdd"
+            android:pathData="M23.23 37.1a0.03 0.03 0 0 0-0.01 0.05 4.64 4.64 0 0 1 1.13 2.74 4.64 4.64 0 0 0 4.32 4.31 4.64 4.64 0 0 1 2.74 1.13 4.64 4.64 0 0 0 6.1 0 4.64 4.64 0 0 1 2.74-1.13 4.64 4.64 0 0 0 4.31-4.32 4.64 4.64 0 0 1 1.13-2.73 4.64 4.64 0 0 0 0-6.1 4.64 4.64 0 0 1-1.13-2.74 4.64 4.64 0 0 0-4.31-4.32 4.64 4.64 0 0 1-2.74-1.13c-0.1-0.09-0.26-0.03-0.3 0.1A20.04 20.04 0 0 1 23.23 37.1Z">
+            <aapt:attr name="android:fillColor">
+                <gradient
+                    android:type="radial"
+                    android:centerX="0"
+                    android:centerY="0"
+                    android:gradientRadius="1">
+                    <item
+                        android:color="#FFFFD535"
+                        android:offset="0.16" />
+                    <item
+                        android:color="#FFFFD323"
+                        android:offset="0.55" />
+                    <item
+                        android:color="#FFE2A93A"
+                        android:offset="0.97" />
+                </gradient>
+            </aapt:attr>
+        </path>
+        <path
+            android:fillType="evenOdd"
+            android:fillColor="#FFABABAB"
+            android:pathData="M24.88 23.78l1.5 5.58 3.18-0.85-1.24-4.65 4.64-1.25-0.85-3.18-5.58 1.5-2.64-1.53a6.25 6.25 0 0 0 0-3.14l2.64-1.52 5.58 1.5 0.85-3.2-4.64-1.24 1.24-4.64-3.19-0.86-1.5 5.58-2.62 1.52a6.24 6.24 0 0 0-2.73-1.6v-3l4.09-4.1-2.33-2.33-3.4 3.4-3.4-3.4-2.34 2.34 4.08 4.08v3a6.24 6.24 0 0 0-2.76 1.59l-2.6-1.5L9.38 6.3 6.2 7.16l1.24 4.64-4.65 1.25 0.86 3.19 5.58-1.5 2.59 1.5a6.25 6.25 0 0 0 0 3.19l-2.6 1.5-5.57-1.5-0.86 3.18 4.65 1.25-1.25 4.65 3.2 0.85 1.49-5.58 2.6-1.5a6.24 6.24 0 0 0 2.75 1.57v3.02l-4.08 4.09 2.33 2.33 3.4-3.4 3.4 3.4 2.34-2.33-4.09-4.09v-3.03a6.24 6.24 0 0 0 2.72-1.58l2.64 1.52Zm-7.03-8.9a2.94 2.94 0 1 0 0 5.89 2.94 2.94 0 0 0 0-5.89Z" />
+    </group>
+</vector>

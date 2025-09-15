@@ -1,0 +1,37 @@
+<!--
+  ~ Copyright (c) 2025
+  ~ All rights reserved.
+  ~ Project: USTH Weather
+  ~ File: cloudy_with_rain_dark.xml
+  ~ Created: 15/9/2025 9:8
+  ~ Last Modified: 15/9/2025 9:8
+  -->
+
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:width="49dp"
+    android:height="49dp"
+    android:viewportWidth="49"
+    android:viewportHeight="49">
+    <path
+        android:fillColor="#FF7CACF8"
+        android:fillType="evenOdd"
+        android:pathData="M30.4 31.09c-3.4 3.57-3.3 9.14 0.28 12.6 3.68 3.57 9.65 3.57 13.33 0 3.69-3.55 3.69-9.32 0-12.88a6.22 6.22 0 0 0-0.05-0.06l-4.51-4.36a15.97 15.97 0 0 1-9.04 4.7Z" />
+    <path android:pathData="M40.5 15.07c0 6.86-5.47 12.44-12.3 12.7v0.01H10.97h-0.12c-4.47 0-8.08-3.6-8.08-8.03s3.61-8.02 8.08-8.02c1.55 0 3 0.43 4.22 1.18 1.04-5.99 6.3-10.54 12.62-10.54 7.06 0 12.8 5.69 12.8 12.7Z">
+        <aapt:attr name="android:fillColor">
+            <gradient
+                android:type="linear"
+                android:startX="34"
+                android:startY="34.63"
+                android:endX="13.74"
+                android:endY="16.47">
+                <item
+                    android:color="#FF757575"
+                    android:offset="0.25" />
+                <item
+                    android:color="#FFABABAB"
+                    android:offset="1" />
+            </gradient>
+        </aapt:attr>
+    </path>
+</vector>

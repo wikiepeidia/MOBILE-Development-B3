@@ -1,0 +1,92 @@
+<!--
+  ~ Copyright (c) 2025
+  ~ All rights reserved.
+  ~ Project: USTH Weather
+  ~ File: strong_thunderstorms.xml
+  ~ Created: 15/9/2025 9:8
+  ~ Last Modified: 15/9/2025 9:8
+  -->
+
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:width="48dp"
+    android:height="48dp"
+    android:viewportWidth="48"
+    android:viewportHeight="48">
+    <path
+        android:fillType="evenOdd"
+        android:pathData="M30.67 21L24 34.76h6L29.26 47 44 30.96l-5.33-0.02L44 21H30.67Z">
+        <aapt:attr name="android:fillColor">
+            <gradient
+                android:type="linear"
+                android:startX="21.16"
+                android:startY="22.4"
+                android:endX="54.14"
+                android:endY="48.41">
+                <item
+                    android:color="#FFF1C100"
+                    android:offset="0.19" />
+                <item
+                    android:color="#FFF39607"
+                    android:offset="0.71" />
+            </gradient>
+        </aapt:attr>
+    </path>
+    <path
+        android:fillType="evenOdd"
+        android:pathData="M18.67 37L16 42.3h2.4L18.1 47l5.9-6.17h-2.13L24 37h-5.33Z">
+        <aapt:attr name="android:fillColor">
+            <gradient
+                android:type="linear"
+                android:startX="14.86"
+                android:startY="37.54"
+                android:endX="27.66"
+                android:endY="48.03">
+                <item
+                    android:color="#FFF1C100"
+                    android:offset="0.19" />
+                <item
+                    android:color="#FFF39607"
+                    android:offset="0.71" />
+            </gradient>
+        </aapt:attr>
+    </path>
+    <path
+        android:fillType="evenOdd"
+        android:pathData="M27.3 20.22L21.6 32h-2.83a0.84 0.84 0 0 1-0.3-1.1l1.05-1.96c0.7-1.33-0.26-2.94-1.77-2.94h-3.58c-0.18 0-0.36 0.02-0.52 0.07A1.98 1.98 0 0 0 13.12 26H10.1c-0.78 0-1.48 0.44-1.81 1.14l-1.82 3.83C3.22 29.37 1 26.05 1 22.2c0-5.41 4.41-9.8 9.85-9.8A9.82 9.82 0 0 1 16 13.87C17.27 6.56 23.67 1 31.4 1 40 1 47 7.94 47 16.5c0 0.44-0.03 0.86-0.06 1.3H30.86a3.83 3.83 0 0 0-3.56 2.42Z">
+        <aapt:attr name="android:fillColor">
+            <gradient
+                android:type="linear"
+                android:startX="34.63"
+                android:startY="8.34"
+                android:endX="7.03"
+                android:endY="31.52">
+                <item
+                    android:color="#FFB5B5B5"
+                    android:offset="0" />
+                <item
+                    android:color="#FFE3E3E3"
+                    android:offset="1" />
+            </gradient>
+        </aapt:attr>
+    </path>
+    <path
+        android:fillType="evenOdd"
+        android:pathData="M10 28l-4 7.94h3.6L9.15 43 18 33.75l-3.2-0.02L18 28h-8Z">
+        <aapt:attr name="android:fillColor">
+            <gradient
+                android:type="linear"
+                android:startX="4.29"
+                android:startY="28.81"
+                android:endX="23.48"
+                android:endY="44.55">
+                <item
+                    android:color="#FFF1C100"
+                    android:offset="0.19" />
+                <item
+                    android:color="#FFF39607"
+                    android:offset="0.71" />
+            </gradient>
+        </aapt:attr>
+    </path>
+</vector>

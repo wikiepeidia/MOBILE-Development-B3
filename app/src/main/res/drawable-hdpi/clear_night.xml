@@ -1,0 +1,35 @@
+<!--
+  ~ Copyright (c) 2025
+  ~ All rights reserved.
+  ~ Project: USTH Weather
+  ~ File: clear_night.xml
+  ~ Created: 15/9/2025 9:8
+  ~ Last Modified: 15/9/2025 9:8
+  -->
+
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:width="48dp"
+    android:height="48dp"
+    android:viewportWidth="48"
+    android:viewportHeight="48">
+    <path
+        android:fillType="evenOdd"
+        android:pathData="M25.85 1c-3.23 3.94-5.16 8.93-5.16 14.37 0 12.7 10.55 23 23.58 23H45C40.68 43.62 34.03 47 26.58 47 13.56 47 3 36.7 3 24 3 11.53 13.16 1.38 25.85 1z">
+        <aapt:attr name="android:fillColor">
+            <gradient
+                android:type="linear"
+                android:startX="-0.65"
+                android:startY="1"
+                android:endX="59.23"
+                android:endY="57.05">
+                <item
+                    android:color="#FFA8C7FA"
+                    android:offset="0" />
+                <item
+                    android:color="#FF4C8DF6"
+                    android:offset="0.77" />
+            </gradient>
+        </aapt:attr>
+    </path>
+</vector>

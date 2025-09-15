@@ -3,8 +3,8 @@
  * All rights reserved.
  * Project: USTH Weather
  * File: WeatherActivity.java
- * Created: 8/9/2025 10:33
- * Last Modified: 8/9/2025 10:33
+ * Created: 15/9/2025 9:8
+ * Last Modified: 15/9/2025 9:8
  */
 
 package vn.edu.usth.usthweather;
@@ -32,6 +32,11 @@ public class WeatherActivity extends AppCompatActivity {
             return insets;
         });
         // Create a new Fragment to be placed in the activity l
+
+        ForecastFragment firstFragment = new ForecastFragment();
+        getSupportFragmentManager().beginTransaction()
+                .add(R.id.container, firstFragment)
+                .commit();
 
     }
 

@@ -1,0 +1,52 @@
+<!--
+  ~ Copyright (c) 2025
+  ~ All rights reserved.
+  ~ Project: USTH Weather
+  ~ File: mostly_cloudy_day.xml
+  ~ Created: 15/9/2025 9:8
+  ~ Last Modified: 15/9/2025 9:8
+  -->
+
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:width="48dp"
+    android:height="48dp"
+    android:viewportWidth="48"
+    android:viewportHeight="48">
+    <path android:pathData="M26.97 5.32a6.27 6.27 0 0 1 5.99 5.99 6.3 6.3 0 0 0 1.53 3.83c2.08 2.4 2.08 5.99-0.01 8.38l-0.25 0.27a6.8 6.8 0 0 0-1.65 3.87 6.92 6.92 0 0 1-6.25 6.25 6.8 6.8 0 0 0-3.87 1.66l-0.28 0.24c-2.38 2.1-5.97 2.1-8.37 0.01a6.3 6.3 0 0 0-3.83-1.53 6.27 6.27 0 0 1-5.99-5.99 6.3 6.3 0 0 0-1.53-3.83c-2.08-2.4-2.09-5.99 0.01-8.37l0.24-0.28a6.8 6.8 0 0 0 1.66-3.87 6.92 6.92 0 0 1 6.25-6.24 6.8 6.8 0 0 0 3.87-1.66l0.27-0.25c2.39-2.1 5.97-2.1 8.37 0a6.3 6.3 0 0 0 3.84 1.52Z">
+        <aapt:attr name="android:fillColor">
+            <gradient
+                android:type="linear"
+                android:startX="16.76"
+                android:startY="-10.36"
+                android:endX="17.56"
+                android:endY="63.07">
+                <item
+                    android:color="#FFF1C100"
+                    android:offset="0.27" />
+                <item
+                    android:color="#FFF39607"
+                    android:offset="1" />
+            </gradient>
+        </aapt:attr>
+    </path>
+    <path
+        android:fillType="evenOdd"
+        android:pathData="M47 27.5c0 8.36-6.66 15.17-15 15.49V43H11h-0.14C5.4 43 1 38.62 1 33.2c0-5.4 4.41-9.78 9.86-9.78 1.89 0 3.65 0.53 5.15 1.44C17.27 17.56 23.68 12 31.4 12 40.01 12 47 18.94 47 27.5Z">
+        <aapt:attr name="android:fillColor">
+            <gradient
+                android:type="linear"
+                android:startX="18.21"
+                android:startY="37.14"
+                android:endX="8.53"
+                android:endY="22.62">
+                <item
+                    android:color="#FFFFFFFF"
+                    android:offset="0" />
+                <item
+                    android:color="#FFE9E9E9"
+                    android:offset="1" />
+            </gradient>
+        </aapt:attr>
+    </path>
+</vector>
