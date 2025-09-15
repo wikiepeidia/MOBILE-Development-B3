@@ -1,12 +1,11 @@
 #!/usr/bin/env sh
 
 #
-# Copyright (c) 2025
+# Copyright (c) 2025 Pham The Minh
 # All rights reserved.
 # Project: USTH Weather
 # File: gradlew
-# Created: 8/9/2025 10:33
-# Last Modified: 8/9/2025 10:33
+# Last Modified: 15/9/2025 10:15
 #
 
 ##############################################################################

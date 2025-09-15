@@ -1,26 +1,256 @@
 <?xml version="1.0" encoding="utf-8"?><!--
-  ~ Copyright (c) 2025
+  ~ Copyright (c) 2025 Pham The Minh
   ~ All rights reserved.
   ~ Project: USTH Weather
   ~ File: fragment_forecast.xml
-  ~ Created: 8/9/2025 10:47
-  ~ Last Modified: 8/9/2025 10:47
+  ~ Last Modified: 15/9/2025 10:15
   -->
 
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_height="match_parent"
+    android:layout_width="match_parent">
 
-    tools:context=".ForecastFragment">
-
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:background="#e0dcfc"
+        android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:id="@+id/container"
-        android:background="#2000FF00"
-        android:text="@string/hello_blank_fragment" />
+        android:padding="8dp">
 
-</FrameLayout>
+        <!-- Monday -->
+        <TextView
+            android:id="@+id/date_mon"
+            android:layout_width="82dp"
+            android:layout_height="wrap_content"
+            android:paddingBottom="8dp"
+            android:text="Mon"
+            android:textSize="30sp"
+            android:textStyle="bold" />
 
+        <ImageView
+            android:id="@+id/weather_icon_mon"
+            android:layout_width="82dp"
+            android:layout_height="match_parent"
+            android:contentDescription="cloudy"
+            android:src="@drawable/partly_cloudy_day" />
+
+        <TextView
+            android:id="@+id/status_mon"
+            android:layout_width="167dp"
+            android:layout_height="wrap_content"
+            android:text="Partly Cloudy"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/temp_mon"
+            android:layout_width="167dp"
+            android:layout_height="wrap_content"
+            android:text="24C - 31C"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+
+        <!-- Tuesday -->
+        <TextView
+            android:id="@+id/date_tue"
+            android:layout_width="82dp"
+            android:layout_height="wrap_content"
+            android:paddingBottom="8dp"
+            android:text="Tue"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/weather_icon_tue"
+            android:layout_width="82dp"
+            android:layout_height="match_parent"
+            android:contentDescription="Rain"
+            android:src="@drawable/showers_rain" />
+
+        <TextView
+            android:id="@+id/status_tue"
+            android:layout_width="167dp"
+            android:layout_height="wrap_content"
+            android:text="Showers"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/temp_tue"
+            android:layout_width="167dp"
+            android:layout_height="wrap_content"
+            android:text="24C - 30C"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+
+        <!-- Wednesday -->
+        <TextView
+            android:id="@+id/date_wed"
+            android:layout_width="82dp"
+            android:layout_height="wrap_content"
+            android:text="Wed"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/weather_icon_wed"
+            android:layout_width="82dp"
+            android:layout_height="match_parent"
+            android:contentDescription="Rain"
+            android:src="@drawable/rain_with_cloudy_dark" />
+
+        <TextView
+            android:id="@+id/status_wed"
+            android:layout_width="167dp"
+            android:layout_height="wrap_content"
+            android:text="Rain"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/temp_wed"
+            android:layout_width="167dp"
+            android:layout_height="wrap_content"
+            android:text="22C - 23C"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+
+        <!-- Thursday -->
+        <TextView
+            android:id="@+id/date_thu"
+            android:layout_width="82dp"
+            android:layout_height="wrap_content"
+            android:text="Thu"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/weather_icon_thu"
+            android:layout_width="82dp"
+            android:layout_height="match_parent"
+            android:contentDescription="Scattered Showers"
+            android:src="@drawable/scattered_showers_day" />
+
+        <TextView
+            android:id="@+id/status_thu"
+            android:layout_width="167dp"
+            android:layout_height="wrap_content"
+            android:text="Scattered Showers"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/temp_thu"
+            android:layout_width="167dp"
+            android:layout_height="wrap_content"
+            android:text="22C - 27C"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+
+        <!-- Friday -->
+        <TextView
+            android:id="@+id/date_fri"
+            android:layout_width="82dp"
+            android:layout_height="wrap_content"
+            android:text="Fri"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/weather_icon_fri"
+            android:layout_width="82dp"
+            android:layout_height="match_parent"
+            android:contentDescription="Cloudy"
+            android:src="@drawable/cloudy" />
+
+        <TextView
+            android:id="@+id/status_fri"
+            android:layout_width="167dp"
+            android:layout_height="wrap_content"
+            android:text="Mostly Cloudy"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/temp_fri"
+            android:layout_width="167dp"
+            android:layout_height="wrap_content"
+            android:text="22C - 30C"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+
+        <!-- Saturday -->
+        <TextView
+            android:id="@+id/date_sat"
+            android:layout_width="82dp"
+            android:layout_height="wrap_content"
+            android:text="Sat"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/weather_icon_sat"
+            android:layout_width="82dp"
+            android:layout_height="match_parent"
+            android:contentDescription="Partly Cloudy"
+            android:src="@drawable/partly_cloudy_night" />
+
+        <TextView
+            android:id="@+id/status_sat"
+            android:layout_width="167dp"
+            android:layout_height="wrap_content"
+            android:text="Partly Cloudy"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/temp_sat"
+            android:layout_width="167dp"
+            android:layout_height="wrap_content"
+            android:text="24C - 31C"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+
+        <!-- Sunday -->
+        <TextView
+            android:id="@+id/date_sun"
+            android:layout_width="82dp"
+            android:layout_height="wrap_content"
+            android:text="Sun"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/weather_icon_sun"
+            android:layout_width="82dp"
+            android:layout_height="match_parent"
+            android:contentDescription="Thunderstorms"
+            android:src="@drawable/strong_thunderstorms" />
+
+        <TextView
+            android:id="@+id/status_sun"
+            android:layout_width="167dp"
+            android:layout_height="wrap_content"
+            android:text="Thunderstorms"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/temp_sun"
+            android:layout_width="167dp"
+            android:layout_height="wrap_content"
+            android:text="25C - 28C"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+
+
+</ScrollView>

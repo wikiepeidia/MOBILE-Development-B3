@@ -1,10 +1,9 @@
 <!--
-  ~ Copyright (c) 2025
+  ~ Copyright (c) 2025 Pham The Minh
   ~ All rights reserved.
   ~ Project: USTH Weather
   ~ File: strings.xml
-  ~ Created: 15/9/2025 9:8
-  ~ Last Modified: 15/9/2025 9:8
+  ~ Last Modified: 15/9/2025 10:15
   -->
 
 <resources>
@@ -17,6 +16,14 @@
     <string name="subject">Subject</string>
     <string name="message">Message</string>
     <string name="send">Send</string>
+    <string name="tuesday">Tuesday</string>
+    <string name="monday">Monday</string>
+    <string name="wedsday">wedsday</string>
+    <string name="thursday">thursday</string>
+    <string name="friday">friday</string>
+    <string name="saturday">saturday</string>
+    <string name="sunday">sunday</string>
+    <string name="blizzard">blizzard</string>
 
 
 </resources>

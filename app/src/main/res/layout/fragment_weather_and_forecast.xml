@@ -2,12 +2,12 @@
   ~ Copyright (c) 2025 Pham The Minh
   ~ All rights reserved.
   ~ Project: USTH Weather
-  ~ File: container.xml
+  ~ File: fragment_weather_and_forecast.xml
   ~ Last Modified: 15/9/2025 10:15
   -->
 
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-</FrameLayout>
+</LinearLayout>

@@ -1,10 +1,9 @@
 /*
- * Copyright (c) 2025
+ * Copyright (c) 2025 Pham The Minh
  * All rights reserved.
  * Project: USTH Weather
  * File: build.gradle.kts
- * Created: 8/9/2025 10:33
- * Last Modified: 8/9/2025 10:33
+ * Last Modified: 15/9/2025 10:15
  */
 
 // Top-level build file where you can add configuration options common to all sub-projects/modules.
