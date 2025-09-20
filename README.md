@@ -4,7 +4,7 @@
 
 * Student ID: **23bi14279**
 * Student Name **Pham The Minh**
-* Class: **B3 ICT class 1**
+* Class: **B3 ICT class 2**
 
 ## Assignment
 
