@@ -2,7 +2,7 @@
  * Copyright (c) 2025 Pham The Minh
  * All rights reserved.
  * Project: USTH Weather
- * File: ForecastFragment.java
+ * File: WeatherFragment.java
  * Last Modified: 20/9/2025 2:15
  */
 
@@ -17,18 +17,17 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
-public class ForecastFragment extends Fragment {
+public class WeatherFragment extends Fragment {
 
-    public ForecastFragment() {
+    public WeatherFragment() {
         // Required empty public constructor
     }
 
     @Nullable
     @Override
-    public View onCreateView(@NonNull LayoutInflater inflater,
-                             @Nullable ViewGroup container,
+    public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container,
                              @Nullable Bundle savedInstanceState) {
-        // Inflate the forecast layout (Mon–Sun list)
-        return inflater.inflate(R.layout.fragment_forecast, container, false);
+        // Inflate the layout for WeatherFragment
+        return inflater.inflate(R.layout.fragment_weather, container, false);
     }
 }

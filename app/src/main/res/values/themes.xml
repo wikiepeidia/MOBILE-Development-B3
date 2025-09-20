@@ -3,15 +3,18 @@
   ~ All rights reserved.
   ~ Project: USTH Weather
   ~ File: themes.xml
-  ~ Last Modified: 15/9/2025 10:15
+  ~ Last Modified: 20/9/2025 2:15
   -->
 
 <resources>
     <!-- Base application theme. -->
-    <style name="Base.Theme.USTHWeather" parent="Theme.Material3.DayNight.NoActionBar">
+    <style name="Base.Theme.USTHWeather" parent="Theme.Material3.DayNight">
         <!-- Customize your light theme here. -->
         <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
     </style>
 
-    <style name="Theme.USTHWeather" parent="Base.Theme.USTHWeather" />
+    <style name="Theme.USTHWeather" parent="Theme.AppCompat.DayNight">
+        <!-- Customize your theme here -->
+
+    </style>
 </resources>

@@ -8,5 +8,11 @@
         <option name="userId" value="4adabbc2:198bac35047:-7ff4" />
       </MTProjectMetadataState>
     </option>
+    <option name="titleBarState">
+      <MTProjectTitleBarConfigState>
+        <option name="enabled" value="true" />
+        <option name="useProjectTitle" value="false" />
+      </MTProjectTitleBarConfigState>
+    </option>
   </component>
 </project>

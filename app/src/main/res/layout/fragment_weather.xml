@@ -3,11 +3,44 @@
   ~ All rights reserved.
   ~ Project: USTH Weather
   ~ File: fragment_weather.xml
-  ~ Last Modified: 15/9/2025 10:15
+  ~ Last Modified: 20/9/2025 2:15
   -->
 
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="250dp"
+    android:background="#C8FACC"
+    android:padding="16dp">
 
-</LinearLayout>
+    <!-- Temperature + status on the left -->
+    <TextView
+        android:id="@+id/temp_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:text="12C\nCloudy"
+        android:textColor="#000000"
+        android:textSize="16sp" />
+
+    <!-- City on the right -->
+    <TextView
+        android:id="@+id/city_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:text="Paris"
+        android:textColor="#000000"
+        android:textSize="16sp" />
+
+    <!-- Weather icon in the center -->
+    <ImageView
+        android:id="@+id/weather_icon"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_centerInParent="true"
+        android:contentDescription="Weather icon"
+        android:src="@drawable/cloudy" />
+
+</RelativeLayout>

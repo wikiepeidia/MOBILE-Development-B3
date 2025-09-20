@@ -3,17 +3,23 @@
   ~ All rights reserved.
   ~ Project: USTH Weather
   ~ File: AndroidManifest.xml
-  ~ Last Modified: 15/9/2025 10:15
+  ~ Last Modified: 20/9/2025 2:15
   -->
 
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <application>
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/cloudy"
+        android:label="USTH Weather"
+        android:theme="@style/Theme.AppCompat.DayNight">
 
         <activity
-            android:name="vn.edu.usth.usthweather.WeatherActivity"
+            android:name=".WeatherActivity"
             android:exported="true"
-            android:theme="@style/Theme.AppCompat.DayNight">
+            android:label="USTH Weather"
+            android:theme="@style/Theme.AppCompat.DayNight">>
+            <!-- 👈 overrides app name if set -->
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />

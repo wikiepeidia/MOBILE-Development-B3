@@ -3,7 +3,7 @@
  * All rights reserved.
  * Project: USTH Weather
  * File: WeatherActivity.java
- * Last Modified: 15/9/2025 10:15
+ * Last Modified: 20/9/2025 2:15
  */
 
 package vn.edu.usth.usthweather;
@@ -18,6 +18,7 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
 public class WeatherActivity extends AppCompatActivity {
+
     private static final String TAG = "WeatherActivity";
 
     @Override
@@ -25,18 +26,23 @@ public class WeatherActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_weather);
+
+        // Handle system bar insets
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
-        // Create a new Fragment to be placed in the activity l
 
-        ForecastFragment firstFragment = new ForecastFragment();
-        getSupportFragmentManager().beginTransaction()
-                .add(R.id.container, firstFragment)
-                .commit();
+        // Only load fragments once (avoid duplicate on rotation)
+        if (savedInstanceState == null) {
+            getSupportFragmentManager().beginTransaction()
+                    .replace(R.id.weather_container, new WeatherFragment())   // green area
+                    .replace(R.id.forecast_container, new ForecastFragment()) // Mon–Sun list
+                    .commit();
+        }
 
+        Log.i(TAG, "onCreate");
     }
 
     @Override
@@ -68,6 +74,4 @@ public class WeatherActivity extends AppCompatActivity {
         super.onDestroy();
         Log.i(TAG, "onDestroy");
     }
-
-
 }

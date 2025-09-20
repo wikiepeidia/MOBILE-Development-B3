@@ -1,256 +1,350 @@
-<?xml version="1.0" encoding="utf-8"?><!--
+<!--
   ~ Copyright (c) 2025 Pham The Minh
   ~ All rights reserved.
   ~ Project: USTH Weather
   ~ File: fragment_forecast.xml
-  ~ Last Modified: 15/9/2025 10:15
+  ~ Last Modified: 20/9/2025 2:15
   -->
 
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_height="match_parent"
-    android:layout_width="match_parent">
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
 
     <LinearLayout
-        android:layout_height="wrap_content"
-        android:background="#e0dcfc"
-        android:orientation="vertical"
         android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#e0dcfc"
         android:padding="8dp">
 
         <!-- Monday -->
-        <TextView
-            android:id="@+id/date_mon"
-            android:layout_width="82dp"
+        <RelativeLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:paddingBottom="8dp"
-            android:text="Mon"
-            android:textSize="30sp"
-            android:textStyle="bold" />
+            android:layout_marginBottom="6dp"
+            android:background="@android:color/white"
+            android:padding="8dp">
 
-        <ImageView
-            android:id="@+id/weather_icon_mon"
-            android:layout_width="82dp"
-            android:layout_height="match_parent"
-            android:contentDescription="cloudy"
-            android:src="@drawable/partly_cloudy_day" />
+            <TextView
+                android:id="@+id/date_mon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:text="Mon"
+                android:textSize="20sp"
+                android:textStyle="bold" />
 
-        <TextView
-            android:id="@+id/status_mon"
-            android:layout_width="167dp"
-            android:layout_height="wrap_content"
-            android:text="Partly Cloudy"
-            android:textSize="18sp"
-            android:textStyle="bold" />
+            <ImageView
+                android:id="@+id/weather_icon_mon"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:contentDescription="Partly Cloudy"
+                android:src="@drawable/partly_cloudy_day" />
 
-        <TextView
-            android:id="@+id/temp_mon"
-            android:layout_width="167dp"
-            android:layout_height="wrap_content"
-            android:text="24C - 31C"
-            android:textSize="18sp"
-            android:textStyle="bold" />
+            <TextView
+                android:id="@+id/status_mon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:text="Partly Cloudy"
+                android:textSize="16sp"
+                android:textStyle="bold" />
 
+            <TextView
+                android:id="@+id/temp_mon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/status_mon"
+                android:layout_alignParentEnd="true"
+                android:text="24C - 31C"
+                android:textSize="14sp" />
+        </RelativeLayout>
 
         <!-- Tuesday -->
-        <TextView
-            android:id="@+id/date_tue"
-            android:layout_width="82dp"
+        <RelativeLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:paddingBottom="8dp"
-            android:text="Tue"
-            android:textSize="30sp"
-            android:textStyle="bold" />
+            android:layout_marginBottom="6dp"
+            android:background="@android:color/white"
+            android:padding="8dp">
 
-        <ImageView
-            android:id="@+id/weather_icon_tue"
-            android:layout_width="82dp"
-            android:layout_height="match_parent"
-            android:contentDescription="Rain"
-            android:src="@drawable/showers_rain" />
+            <TextView
+                android:id="@+id/date_tue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:text="Tue"
+                android:textSize="20sp"
+                android:textStyle="bold" />
 
-        <TextView
-            android:id="@+id/status_tue"
-            android:layout_width="167dp"
-            android:layout_height="wrap_content"
-            android:text="Showers"
-            android:textSize="18sp"
-            android:textStyle="bold" />
+            <ImageView
+                android:id="@+id/weather_icon_tue"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:contentDescription="Showers"
+                android:src="@drawable/showers_rain" />
 
-        <TextView
-            android:id="@+id/temp_tue"
-            android:layout_width="167dp"
-            android:layout_height="wrap_content"
-            android:text="24C - 30C"
-            android:textSize="18sp"
-            android:textStyle="bold" />
+            <TextView
+                android:id="@+id/status_tue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:text="Showers"
+                android:textSize="16sp"
+                android:textStyle="bold" />
 
+            <TextView
+                android:id="@+id/temp_tue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/status_tue"
+                android:layout_alignParentEnd="true"
+                android:text="24C - 30C"
+                android:textSize="14sp" />
+        </RelativeLayout>
 
         <!-- Wednesday -->
-        <TextView
-            android:id="@+id/date_wed"
-            android:layout_width="82dp"
+        <RelativeLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Wed"
-            android:textSize="30sp"
-            android:textStyle="bold" />
+            android:layout_marginBottom="6dp"
+            android:background="@android:color/white"
+            android:padding="8dp">
 
-        <ImageView
-            android:id="@+id/weather_icon_wed"
-            android:layout_width="82dp"
-            android:layout_height="match_parent"
-            android:contentDescription="Rain"
-            android:src="@drawable/rain_with_cloudy_dark" />
+            <TextView
+                android:id="@+id/date_wed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:text="Wed"
+                android:textSize="20sp"
+                android:textStyle="bold" />
 
-        <TextView
-            android:id="@+id/status_wed"
-            android:layout_width="167dp"
-            android:layout_height="wrap_content"
-            android:text="Rain"
-            android:textSize="18sp"
-            android:textStyle="bold" />
+            <ImageView
+                android:id="@+id/weather_icon_wed"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:contentDescription="Rain"
+                android:src="@drawable/rain_with_cloudy_dark" />
 
-        <TextView
-            android:id="@+id/temp_wed"
-            android:layout_width="167dp"
-            android:layout_height="wrap_content"
-            android:text="22C - 23C"
-            android:textSize="18sp"
-            android:textStyle="bold" />
+            <TextView
+                android:id="@+id/status_wed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:text="Rain"
+                android:textSize="16sp"
+                android:textStyle="bold" />
 
+            <TextView
+                android:id="@+id/temp_wed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/status_wed"
+                android:layout_alignParentEnd="true"
+                android:text="22C - 23C"
+                android:textSize="14sp" />
+        </RelativeLayout>
 
         <!-- Thursday -->
-        <TextView
-            android:id="@+id/date_thu"
-            android:layout_width="82dp"
+        <RelativeLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Thu"
-            android:textSize="30sp"
-            android:textStyle="bold" />
+            android:layout_marginBottom="6dp"
+            android:background="@android:color/white"
+            android:padding="8dp">
 
-        <ImageView
-            android:id="@+id/weather_icon_thu"
-            android:layout_width="82dp"
-            android:layout_height="match_parent"
-            android:contentDescription="Scattered Showers"
-            android:src="@drawable/scattered_showers_day" />
+            <TextView
+                android:id="@+id/date_thu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:text="Thu"
+                android:textSize="20sp"
+                android:textStyle="bold" />
 
-        <TextView
-            android:id="@+id/status_thu"
-            android:layout_width="167dp"
-            android:layout_height="wrap_content"
-            android:text="Scattered Showers"
-            android:textSize="18sp"
-            android:textStyle="bold" />
+            <ImageView
+                android:id="@+id/weather_icon_thu"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:contentDescription="Scattered Showers"
+                android:src="@drawable/scattered_showers_day" />
 
-        <TextView
-            android:id="@+id/temp_thu"
-            android:layout_width="167dp"
-            android:layout_height="wrap_content"
-            android:text="22C - 27C"
-            android:textSize="18sp"
-            android:textStyle="bold" />
+            <TextView
+                android:id="@+id/status_thu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:text="Scattered Showers"
+                android:textSize="16sp"
+                android:textStyle="bold" />
 
+            <TextView
+                android:id="@+id/temp_thu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/status_thu"
+                android:layout_alignParentEnd="true"
+                android:text="22C - 27C"
+                android:textSize="14sp" />
+        </RelativeLayout>
 
         <!-- Friday -->
-        <TextView
-            android:id="@+id/date_fri"
-            android:layout_width="82dp"
+        <RelativeLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Fri"
-            android:textSize="30sp"
-            android:textStyle="bold" />
+            android:layout_marginBottom="6dp"
+            android:background="@android:color/white"
+            android:padding="8dp">
 
-        <ImageView
-            android:id="@+id/weather_icon_fri"
-            android:layout_width="82dp"
-            android:layout_height="match_parent"
-            android:contentDescription="Cloudy"
-            android:src="@drawable/cloudy" />
+            <TextView
+                android:id="@+id/date_fri"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:text="Fri"
+                android:textSize="20sp"
+                android:textStyle="bold" />
 
-        <TextView
-            android:id="@+id/status_fri"
-            android:layout_width="167dp"
-            android:layout_height="wrap_content"
-            android:text="Mostly Cloudy"
-            android:textSize="18sp"
-            android:textStyle="bold" />
+            <ImageView
+                android:id="@+id/weather_icon_fri"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:contentDescription="Mostly Cloudy"
+                android:src="@drawable/cloudy" />
 
-        <TextView
-            android:id="@+id/temp_fri"
-            android:layout_width="167dp"
-            android:layout_height="wrap_content"
-            android:text="22C - 30C"
-            android:textSize="18sp"
-            android:textStyle="bold" />
+            <TextView
+                android:id="@+id/status_fri"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:text="Mostly Cloudy"
+                android:textSize="16sp"
+                android:textStyle="bold" />
 
+            <TextView
+                android:id="@+id/temp_fri"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/status_fri"
+                android:layout_alignParentEnd="true"
+                android:text="22C - 30C"
+                android:textSize="14sp" />
+        </RelativeLayout>
 
         <!-- Saturday -->
-        <TextView
-            android:id="@+id/date_sat"
-            android:layout_width="82dp"
+        <RelativeLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Sat"
-            android:textSize="30sp"
-            android:textStyle="bold" />
+            android:layout_marginBottom="6dp"
+            android:background="@android:color/white"
+            android:padding="8dp">
 
-        <ImageView
-            android:id="@+id/weather_icon_sat"
-            android:layout_width="82dp"
-            android:layout_height="match_parent"
-            android:contentDescription="Partly Cloudy"
-            android:src="@drawable/partly_cloudy_night" />
+            <TextView
+                android:id="@+id/date_sat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:text="Sat"
+                android:textSize="20sp"
+                android:textStyle="bold" />
 
-        <TextView
-            android:id="@+id/status_sat"
-            android:layout_width="167dp"
-            android:layout_height="wrap_content"
-            android:text="Partly Cloudy"
-            android:textSize="18sp"
-            android:textStyle="bold" />
+            <ImageView
+                android:id="@+id/weather_icon_sat"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:contentDescription="Partly Cloudy"
+                android:src="@drawable/partly_cloudy_night" />
 
-        <TextView
-            android:id="@+id/temp_sat"
-            android:layout_width="167dp"
-            android:layout_height="wrap_content"
-            android:text="24C - 31C"
-            android:textSize="18sp"
-            android:textStyle="bold" />
+            <TextView
+                android:id="@+id/status_sat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:text="Partly Cloudy"
+                android:textSize="16sp"
+                android:textStyle="bold" />
 
+            <TextView
+                android:id="@+id/temp_sat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/status_sat"
+                android:layout_alignParentEnd="true"
+                android:text="24C - 31C"
+                android:textSize="14sp" />
+        </RelativeLayout>
 
         <!-- Sunday -->
-        <TextView
-            android:id="@+id/date_sun"
-            android:layout_width="82dp"
+        <RelativeLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Sun"
-            android:textSize="30sp"
-            android:textStyle="bold" />
+            android:layout_marginBottom="6dp"
+            android:background="@android:color/white"
+            android:padding="8dp">
 
-        <ImageView
-            android:id="@+id/weather_icon_sun"
-            android:layout_width="82dp"
-            android:layout_height="match_parent"
-            android:contentDescription="Thunderstorms"
-            android:src="@drawable/strong_thunderstorms" />
+            <TextView
+                android:id="@+id/date_sun"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:text="Sun"
+                android:textSize="20sp"
+                android:textStyle="bold" />
 
-        <TextView
-            android:id="@+id/status_sun"
-            android:layout_width="167dp"
-            android:layout_height="wrap_content"
-            android:text="Thunderstorms"
-            android:textSize="18sp"
-            android:textStyle="bold" />
+            <ImageView
+                android:id="@+id/weather_icon_sun"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:contentDescription="Thunderstorms"
+                android:src="@drawable/strong_thunderstorms" />
 
-        <TextView
-            android:id="@+id/temp_sun"
-            android:layout_width="167dp"
-            android:layout_height="wrap_content"
-            android:text="25C - 28C"
-            android:textSize="18sp"
-            android:textStyle="bold" />
+            <TextView
+                android:id="@+id/status_sun"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:text="Thunderstorms"
+                android:textSize="16sp"
+                android:textStyle="bold" />
 
+            <TextView
+                android:id="@+id/temp_sun"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/status_sun"
+                android:layout_alignParentEnd="true"
+                android:text="25C - 28C"
+                android:textSize="14sp" />
+        </RelativeLayout>
 
     </LinearLayout>
-
-
 </ScrollView>
