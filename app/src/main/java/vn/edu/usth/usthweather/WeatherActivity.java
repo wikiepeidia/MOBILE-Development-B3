@@ -3,7 +3,7 @@
  * All rights reserved.
  * Project: USTH Weather
  * File: WeatherActivity.java
- * Last Modified: 20/9/2025 2:15
+ * Last Modified: 20/9/2025 2:36
  */
 
 package vn.edu.usth.usthweather;
@@ -16,6 +16,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
+import androidx.viewpager2.widget.ViewPager2;
 
 public class WeatherActivity extends AppCompatActivity {
 
@@ -27,20 +28,17 @@ public class WeatherActivity extends AppCompatActivity {
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_weather);
 
+        // Setup ViewPager2
+        ViewPager2 viewPager = findViewById(R.id.viewPager);
+        WeatherPagerAdapter adapter = new WeatherPagerAdapter(this);
+        viewPager.setAdapter(adapter);
+
         // Handle system bar insets
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
-
-        // Only load fragments once (avoid duplicate on rotation)
-        if (savedInstanceState == null) {
-            getSupportFragmentManager().beginTransaction()
-                    .replace(R.id.weather_container, new WeatherFragment())   // green area
-                    .replace(R.id.forecast_container, new ForecastFragment()) // Mon–Sun list
-                    .commit();
-        }
 
         Log.i(TAG, "onCreate");
     }

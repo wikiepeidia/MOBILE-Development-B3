@@ -3,11 +3,24 @@
   ~ All rights reserved.
   ~ Project: USTH Weather
   ~ File: fragment_weather_and_forecast.xml
-  ~ Last Modified: 15/9/2025 10:15
+  ~ Last Modified: 20/9/2025 2:36
   -->
 
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!-- WeatherFragment (green box) -->
+    <FrameLayout
+        android:id="@+id/weather_container"
+        android:layout_width="match_parent"
+        android:layout_height="250dp" />
+
+    <!-- ForecastFragment (Mon–Sun list) -->
+    <FrameLayout
+        android:id="@+id/forecast_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
 
 </LinearLayout>
