@@ -1,6 +1,6 @@
 # USTH ICT Android mobile app Development 2025
 
-## Student Information :
+## Student Information
 
 * Student ID: **23bi14279**
 * Student Name **Pham The Minh**
@@ -26,3 +26,14 @@
 
 * icon weather set from <u>https://github.com/Makin-Things/weather-icons/tree/main/static </u>
 * Linear layout
+
+### Practical 5 Forecast fragment with linear layout
+
+### Practical 6: Combine layout
+
+* NEW:`weatherfragment`
+* Relative layout
+
+### Practical 7: view pager
+
+* 3 page view pager
