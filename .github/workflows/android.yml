@@ -266,6 +266,3 @@ jobs:
           path: build/dependencyUpdates/report.txt
           if-no-files-found: ignore
 
-# EXTENDED: Schedule for nightly builds
-  schedule:
-    - cron: '0 2 * * *'  # Run at 2 AM daily
